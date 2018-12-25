@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/discounts_selected_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/black_alpha_05" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/material_padding" android:layout_marginTop="19dp" android:layout_marginRight="@dimen/material_padding" android:layout_marginBottom="19dp" android:text="@string/favorite_places"/>
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="1dp">
+        <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:paddingLeft="@dimen/material_padding" android:paddingRight="@dimen/material_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+            <include android:id="@+id/discount_select_1" layout="@layout/discounts_item_selected"/>
+            <include android:id="@+id/discount_select_2" layout="@layout/discounts_item_selected"/>
+            <include android:id="@+id/discount_select_3" layout="@layout/discounts_item_selected"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

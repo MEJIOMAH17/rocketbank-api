@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextColor="@color/rocketBlack" style="@style/TabLayoutStyle">
+        <ru.rocketbank.r2d2.root.analytics.SwitchAvatarButton android:enabled="false" android:layout_gravity="right" android:id="@id/buttonChangeAnalyticsToolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:foregroundGravity="right" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:tabIndicatorColor="@color/orange" style="@style/TabLayoutStyle" />
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

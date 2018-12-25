@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <android.support.v7.widget.CardView android:id="@+id/besp" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentBottom="true" app:cardCornerRadius="0dp">
+        <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/bespTextView" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/besp_caption" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageButton android:id="@+id/bespInfo" android:background="@color/transparent" android:paddingLeft="8dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_info_black" android:scaleType="fitCenter" android:tint="#333333" android:layout_toRightOf="@+id/bespTextView" android:layout_centerVertical="true" android:alpha="0.24"/>
+            <android.support.v7.widget.SwitchCompat android:theme="@style/ColorSwitchStyle" android:id="@+id/bespSwitch" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView android:scrollbarStyle="insideOverlay" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/besp" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.r2d2.widget.AccountWidget android:gravity="center" android:id="@+id/accountWidget" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginTop="14dp"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="16dp" layout="@layout/template_transfer"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12dp">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="#484849" android:id="@+id/cta_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cta_amount"/>
+                <ru.rocketbank.core.widgets.RocketEditText android:textSize="64sp" android:gravity="center" android:id="@+id/edittext_transfers_bank_amount" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:minHeight="120dp" android:inputType="numberDecimal" android:isScrollContainer="false" app:rocket_font="0" style="@style/RocketEditText"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/transfers_bank_comission" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:minHeight="30dp" app:rocket_font="2"/>
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

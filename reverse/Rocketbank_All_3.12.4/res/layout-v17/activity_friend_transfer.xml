@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextColor="@color/rocketBlack" style="@style/TabLayoutStyle">
+        <ru.rocketbank.core.widgets.RocketButton android:enabled="false" android:textSize="15.0sp" android:textColor="@drawable/btn_next_color_selector" android:layout_gravity="right" android:id="@id/btnNext" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="ДАЛЕЕ" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:rocket_font="medium" style="?android:borderlessButtonStyle" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:tabIndicatorColor="@color/orange" style="@style/TabLayoutStyle" />
+    <android.support.v4.view.ViewPager android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

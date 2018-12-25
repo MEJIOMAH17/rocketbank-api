@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:titleTextColor="@color/rocketBlack">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_provider"/>
+                <android.support.design.widget.CoordinatorLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@+id/toolbarShadow" android:background="@drawable/toolbar_dropshadow" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="ru.rocketbank.r2d2.friends.InviteFriendsFragment" android:id="@id/fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</io.codetail.widget.RevealFrameLayout>

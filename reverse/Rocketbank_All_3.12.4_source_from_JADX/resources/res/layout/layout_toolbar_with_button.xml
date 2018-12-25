@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_appbar" android:tag="layout/layout_toolbar_with_button_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ru.rocketbank.core.widgets.RocketTextView android:textAppearance="@android:style/TextAppearance.Medium" android:textSize="20sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_toLeftOf="@+id/next" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:rocket_font="1"/>
+            <ru.rocketbank.core.widgets.RocketButton android:textSize="15sp" android:textColor="@drawable/btn_next_color_selector" android:gravity="center" android:id="@+id/next" android:tag="binding_2" android:background="@color/transparent" android:paddingLeft="@dimen/toolbar_button_padding" android:paddingRight="@dimen/toolbar_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/material_padding" android:layout_alignParentRight="true" app:rocket_font="1" style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip" app:cardCornerRadius="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ru.rocketbank.core.widgets.RocketTextView android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:maxWidth="250.0dip" />
+    </android.support.v7.widget.CardView>
+</FrameLayout>

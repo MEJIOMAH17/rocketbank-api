@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/selected" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@mipmap/error_00053" />
+    <item android:duration="30" android:drawable="@mipmap/error_00054" />
+    <item android:duration="30" android:drawable="@mipmap/error_00055" />
+    <item android:duration="30" android:drawable="@mipmap/error_00056" />
+    <item android:duration="30" android:drawable="@mipmap/error_00057" />
+    <item android:duration="30" android:drawable="@mipmap/error_00058" />
+    <item android:duration="30" android:drawable="@mipmap/error_00059" />
+    <item android:duration="30" android:drawable="@mipmap/error_00060" />
+    <item android:duration="30" android:drawable="@mipmap/error_00061" />
+    <item android:duration="30" android:drawable="@mipmap/error_00062" />
+    <item android:duration="30" android:drawable="@mipmap/error_00063" />
+    <item android:duration="30" android:drawable="@mipmap/error_00064" />
+    <item android:duration="30" android:drawable="@mipmap/error_00065" />
+    <item android:duration="30" android:drawable="@mipmap/error_00066" />
+    <item android:duration="30" android:drawable="@mipmap/error_00067" />
+    <item android:duration="30" android:drawable="@mipmap/error_00068" />
+    <item android:duration="30" android:drawable="@mipmap/error_00069" />
+    <item android:duration="30" android:drawable="@mipmap/error_00070" />
+    <item android:duration="30" android:drawable="@mipmap/error_00071" />
+    <item android:duration="30" android:drawable="@mipmap/error_00072" />
+    <item android:duration="30" android:drawable="@mipmap/error_00073" />
+    <item android:duration="30" android:drawable="@mipmap/error_00074" />
+    <item android:duration="30" android:drawable="@mipmap/error_00075" />
+    <item android:duration="30" android:drawable="@mipmap/error_00076" />
+    <item android:duration="30" android:drawable="@mipmap/error_00077" />
+    <item android:duration="30" android:drawable="@mipmap/error_00078" />
+    <item android:duration="30" android:drawable="@mipmap/error_00079" />
+    <item android:duration="30" android:drawable="@mipmap/error_00080" />
+    <item android:duration="30" android:drawable="@mipmap/error_00081" />
+    <item android:duration="30" android:drawable="@mipmap/error_00082" />
+    <item android:duration="30" android:drawable="@mipmap/error_00083" />
+    <item android:duration="30" android:drawable="@mipmap/error_00084" />
+    <item android:duration="30" android:drawable="@mipmap/error_00085" />
+    <item android:duration="30" android:drawable="@mipmap/error_00086" />
+    <item android:duration="30" android:drawable="@mipmap/error_00087" />
+    <item android:duration="30" android:drawable="@mipmap/error_00088" />
+    <item android:duration="30" android:drawable="@mipmap/error_00089" />
+    <item android:duration="30" android:drawable="@mipmap/error_00090" />
+    <item android:duration="30" android:drawable="@mipmap/error_00091" />
+    <item android:duration="30" android:drawable="@mipmap/error_00092" />
+    <item android:duration="30" android:drawable="@mipmap/error_00093" />
+</animation-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/layout_message_out_text_0" android:paddingLeft="13dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:id="@+id/messageBody" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75dp">
+            <FrameLayout android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/white" android:textColorLink="@color/white" android:autoLink="web" android:tag="binding_3" android:padding="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" app:rocket_font="7"/>
+            </FrameLayout>
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@+id/retry" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/retry_cap"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="#bcbcbc" android:layout_gravity="right" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="12dp"/>
+</LinearLayout>

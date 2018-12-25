@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:id="@+id/root" android:tag="layout/layout_statistics_action_item_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/registration_bottom_button_text_color_selector" android:gravity="right" android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:rocket_font="1"/>
+</RelativeLayout>

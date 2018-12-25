@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <ru.rocketbank.core.widgets.RocketNumpad android:layout_gravity="center_horizontal" android:id="@+id/numpad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:minWidth="320dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fingerprint" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.mattprecious.swirl.SwirlView android:id="@+id/finger" android:layout_width="30dp" android:layout_height="30dp"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="#ec3039" android:gravity="center" android:id="@+id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:rocket_font="7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_above="@+id/pad" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginBottom="20dp" android:src="@drawable/logo_head"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textViewHintBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:text="@string/activity_registration_code_textview_hint" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketSMSInput android:id="@+id/sms_input" android:layout_width="match_parent" android:layout_height="wrap_content" app:small="true"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/screen_background" android:paddingLeft="72.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="18.0sp" android:textColor="@color/list_item_secondary" android:id="@id/day" android:paddingTop="24.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="medium" />
+</FrameLayout>

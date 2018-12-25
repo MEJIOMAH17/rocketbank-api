@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/selected" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@mipmap/load_00043" />
+    <item android:duration="30" android:drawable="@mipmap/load_00044" />
+    <item android:duration="30" android:drawable="@mipmap/load_00045" />
+    <item android:duration="30" android:drawable="@mipmap/load_00046" />
+    <item android:duration="30" android:drawable="@mipmap/load_00047" />
+    <item android:duration="30" android:drawable="@mipmap/load_00048" />
+    <item android:duration="30" android:drawable="@mipmap/load_00049" />
+    <item android:duration="30" android:drawable="@mipmap/load_00050" />
+    <item android:duration="30" android:drawable="@mipmap/load_00051" />
+    <item android:duration="30" android:drawable="@mipmap/load_00052" />
+</animation-list>

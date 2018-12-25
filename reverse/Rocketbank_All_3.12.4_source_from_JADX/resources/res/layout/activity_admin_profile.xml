@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView android:id="@+id/observableScrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.SquareLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ru.rocketbank.r2d2.widgets.BackgroundImageView android:id="@+id/avatarImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/image_progress_bar" android:visibility="invisible" android:layout_width="35dp" android:layout_height="35dp"/>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/nameTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:rocket_font="0"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_stars_empty" android:scaleType="matrix"/>
+                        <ImageView android:id="@+id/starsImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_stars_full" android:scaleType="matrix"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </ru.rocketbank.core.widgets.SquareLayout>
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:textColor="@color/black_87" android:id="@+id/infoTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:rocket_font="0"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/black_54" android:id="@+id/timeTextView" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <include layout="@layout/include_toolbar"/>
+</FrameLayout>

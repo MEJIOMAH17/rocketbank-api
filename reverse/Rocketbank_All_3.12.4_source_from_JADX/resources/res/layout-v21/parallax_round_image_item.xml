@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/parallax_round_image_item_0" android:paddingLeft="17dp" android:paddingTop="12dp" android:paddingRight="17dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2dp" style="@style/commonListItemStyle">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/image" android:layout_width="@dimen/image_size" android:layout_height="@dimen/image_size" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_toRightOf="@+id/image">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="#d6000000" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="#8a000000" android:id="@+id/title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+    </LinearLayout>
+</RelativeLayout>

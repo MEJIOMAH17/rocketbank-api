@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/logo_head" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="32.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:text="Современный банк\nдля людей" app:rocket_font="light" />
+            <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/white" android:id="@id/startButton" android:background="@drawable/rocketbutton_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Начать" android:onClick="onStartClick" app:rocket_font="light" />
+            <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/white" android:id="@id/showMapButton" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Карта банкоматов" android:onClick="onAtmsClick" app:rocket_font="light" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

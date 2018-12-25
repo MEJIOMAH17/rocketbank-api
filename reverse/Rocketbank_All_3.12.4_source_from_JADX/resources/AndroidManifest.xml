@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="312400" android:versionName="3.12.4" android:installLocation="internalOnly" package="ru.rocketbank.r2d2">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25"/>
+    <instrumentation android:name=".TestRunner" android:targetPackage="ru.rocketbank.r2d2"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <permission android:name="android.permission.NFC"/>
+    <permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="ru.rocketbank.r2d2.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ru.rocketbank.r2d2.permission.C2D_MESSAGE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="ru.rocketbank.r2d2.RocketApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="false" android:roundIcon="@mipmap/ic_launcher_round">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_api_key"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="ru.rocketbank.r2d2.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:name="ru.rocketbank.r2d2.firebase.RocketFirebaseInstanceIDService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="ru.rocketbank.r2d2.firebase.RocketFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme_App" android:name="ru.rocketbank.r2d2.root.lead.LandingActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Rocket_NoDisplay" android:name="ru.rocketbank.r2d2.activities.StartupActivity" android:screenOrientation="portrait" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="rocketbank.ru" android:pathPrefix="/reset_code"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="rocketbank" android:host="reset_short_code"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ru.rocketbank.r2d2.action.ANDROID_PAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="rocketbank" android:host="kitchen"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.ChangeCodeActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/Theme_App" android:label="@string/cba_title" android:name="ru.rocketbank.r2d2.activities.CardBlockActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_App" android:name="ru.rocketbank.r2d2.activities.DiscountDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.AdminProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.root.lead.EnterPhoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.root.lead.SmsConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.CodeResetActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/pa_title" android:name="ru.rocketbank.r2d2.activities.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/ada_title" android:name="ru.rocketbank.r2d2.activities.AccountDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="Оплата услуг" android:name="ru.rocketbank.r2d2.activities.ProvidersActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Перевод" android:name="ru.rocketbank.r2d2.activities.TransferToCardActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/fragment_support_title" android:name="ru.rocketbank.r2d2.activities.SupportChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/fragment_support_title" android:name="ru.rocketbank.r2d2.registration.SupportChatLeadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/photo_view_title" android:name="ru.rocketbank.r2d2.activities.PhotoViewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/pda_title" android:name="ru.rocketbank.r2d2.payment.PaymentDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.FirstRefillActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/cash_refill_title" android:name="ru.rocketbank.r2d2.activities.CashRefillActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/rmfca_title" android:name="ru.rocketbank.r2d2.activities.RequestMoneyFromContactActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/smtca_title" android:name="ru.rocketbank.r2d2.activities.SendMoneyToContactActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Аналитика" android:name="ru.rocketbank.r2d2.activities.AnalyticsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_Transparent" android:label="Позвать друзей" android:name="ru.rocketbank.r2d2.friends.InviteFriendsActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme_AppCompat_Light_NoActionBar_Fullscreen" android:name="ru.rocketbank.r2d2.activities.VideoActivity" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.ChangePhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:label="@string/title_activity_migration" android:name="ru.rocketbank.r2d2.activities.MigrationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:label="@string/title_activity_friend_transfer" android:name="ru.rocketbank.r2d2.friends.FriendActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/FullscreenTheme" android:name="ru.rocketbank.r2d2.friends.InviteFriendsInfoActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:name="ru.rocketbank.r2d2.friends.RefillRequestActivity"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:name="ru.rocketbank.r2d2.friends.TransferRequestActivity"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:name="ru.rocketbank.r2d2.registration.RegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.fragments.transfers.BankAmountActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_OperationActivity" android:name="ru.rocketbank.r2d2.root.operation.DetailOperationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme_OperationActivity" android:name="ru.rocketbank.r2d2.root.operation.DetailRocketrubleOperationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme_OperationActivity" android:name="ru.rocketbank.r2d2.activities.operation.OperationTagActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.friends.FriendsStatusActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.payment.PaymentStatusActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="ru.rocketbank.r2d2.activities.operation.OperationListActivity"/>
+        <service android:name="ru.rocketbank.core.service.DownloadService" android:exported="false"/>
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBarWhite" android:label="@string/cra_title" android:name="ru.rocketbank.r2d2.activities.FromCardRefillActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter"/>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.c2c.CardTransferAmountActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.c2c.CardRefillActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:label="@string/confirming" android:name="ru.rocketbank.r2d2.activities.c2c.Enter3dSecActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.c2c.CardRefillAmountActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.c2c.CvvEnterActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.c2c.CardTransferProcessActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/transfer_title" android:name="ru.rocketbank.r2d2.activities.safe.TransferActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.ChangeCodewordActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.activities.safe.CloseSafeStatusActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.charges.ChargePaymentDetailsActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.charges.ChargesListActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.charges.penalty.PenaltyChargeInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.charges.tax.TaxChargeInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.charges.ChargePayStatusActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/penalty_tax_notification" android:name="ru.rocketbank.r2d2.charges.ChargeNotificationActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.friends.ChooseFriendActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="@string/sounds" android:name="ru.rocketbank.r2d2.activities.sound.SoundActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.DiscountsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/references" android:name="ru.rocketbank.r2d2.activities.ReferencesActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:label="@string/download" android:name="ru.rocketbank.r2d2.activities.DownloadActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:label="@string/reference" android:name="ru.rocketbank.r2d2.activities.PdfViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="ru.rocketbank.r2d2.root.delivery.DeliveryActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.card.CardLimitActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.tariffs.SalaryTariffInstructionActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fragment_tariffs_title" android:name="ru.rocketbank.r2d2.activities.tariffs.TariffsActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/cart_activity_title" android:name="ru.rocketbank.r2d2.shop.cart.ShopCartActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.shop.details.ShopDetailsActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullscreenTheme" android:name="ru.rocketbank.r2d2.fragments.rocketrouble.RocketRubleInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.shop.order.ShopOrderActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.shop.order.ShopStatusActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.activities.rocketkitchen.RocketCafeActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <service android:name="ru.rocketbank.r2d2.service.SendLocationIntentService" android:exported="false"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:name="ru.rocketbank.r2d2.shop.order.ShopInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="ru.rocketbank.r2d2.root.devidepayment.ap.APAddCardActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="ru.rocketbank.r2d2.root.devidepayment.ap.APManageCardActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_sp_add_card" android:name="ru.rocketbank.r2d2.root.devidepayment.sp.SPAddCardActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_LightToolbar" android:name="ru.rocketbank.r2d2.registration.new_passport.NewPassportActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme_RocketNoActionBar" android:label="@string/title_activity_wep_auth" android:name="ru.rocketbank.r2d2.activities.webauth.Sec3dActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="0a233725263bbbd77d6c94753acf342e9e68ba19"/>
+        <meta-data android:name="debug_mode" android:value="N"/>
+        <meta-data android:name="spay_sdk_api_level" android:value="1.8"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="ru.rocketbank.r2d2"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false"/>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="ru.rocketbank.r2d2.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="ru.rocketbank.r2d2.crashlyticsinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+    </application>
+</manifest>

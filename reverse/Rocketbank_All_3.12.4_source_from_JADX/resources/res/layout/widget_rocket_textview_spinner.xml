@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/gray_variant_1" android:id="@+id/textViewLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" app:rocket_font="7"/>
+        <FrameLayout android:textSize="16sp" android:background="@drawable/underline_orange" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="numberDecimal" android:imeOptions="actionNext">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/widget_rocket_payment_edittext_value_font_size" android:textColor="@color/rocketBlack" android:id="@+id/textViewDate" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/widget_rocket_payment_edittext_value_font_size" android:textColor="@color/rocketBlack" android:id="@+id/textViewTime" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

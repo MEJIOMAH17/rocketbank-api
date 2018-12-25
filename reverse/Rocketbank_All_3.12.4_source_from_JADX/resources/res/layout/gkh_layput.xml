@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/gkh_fields" android:tag="layout/gkh_layput_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <android.support.v7.widget.CardView android:id="@+id/gkh_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="#d6000000" android:id="@+id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/transfer_to_bank_account_form_margin" android:text="@string/this_is_gkh" app:rocket_font="7"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:id="@+id/gkh_info" android:layout_marginTop="0dp" android:layout_marginBottom="15dp" style="@style/TransfersBankInputCaption"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_account_number" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/gkh_account_number" android:tag="binding_1" android:hint="@string/gkh_face_number_hint" android:maxLines="1" android:maxLength="30" android:inputType="number" style="@style/TransfersBankInputText"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_period" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/rocketBlack" android:id="@+id/gkhPeriod" android:tag="binding_2" android:clickable="true" android:hint="@string/gkh_select" android:maxLines="1" style="@style/TransfersBankInputText"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_payment_document_id" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/gkh_payment_document_id" android:tag="binding_3" android:hint="@string/gkh_doc_id_hint" android:maxLines="1" android:maxLength="18" style="@style/TransfersBankInputText"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_mc_service_id" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/gkh_service_id" android:tag="binding_4" android:hint="@string/gkh_service_id_hint" android:maxLines="1" android:maxLength="13" style="@style/TransfersBankInputText"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_els" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/gkh_united_face_number" android:tag="binding_5" android:hint="@string/gkh_els_hint" android:maxLines="1" android:maxLength="10" style="@style/TransfersBankInputText"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/gkh_payment_document_number" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/gkh_doc_number" android:tag="binding_6" style="@style/TransfersBankInputText"/>
+</LinearLayout>

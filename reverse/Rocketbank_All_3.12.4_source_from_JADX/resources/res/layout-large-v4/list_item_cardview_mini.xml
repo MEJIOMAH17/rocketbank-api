@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center">
+    <android.support.v7.widget.CardView android:id="@+id/cardView" android:layout_width="@dimen/card_recycler_item_size_width" android:layout_height="@dimen/card_recycler_item_size_height" android:layout_margin="5dp" app:cardCornerRadius="@dimen/list_item_mini_card_corner_radius">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/imageViewBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:id="@+id/logo" android:paddingLeft="10dp" android:paddingTop="7dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:layout_marginBottom="4dp" android:maxHeight="20dp" android:maxLines="2" android:singleLine="true" android:layout_above="@+id/linear_code"/>
+            <LinearLayout android:id="@+id/linear_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/dots_white"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="end" android:id="@+id/hide" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:src="@drawable/ic_more_vert_white_24dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</merge>

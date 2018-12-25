@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/numpad" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_head" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textViewHintBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/activity_registration_sms_textview_hint" rocket:rocket_font="light" />
+            <ru.rocketbank.core.widgets.RocketSMSInput android:id="@id/sms_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" rocket:small="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:gravity="center" android:layout_gravity="right" android:id="@id/textview_erase" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="invisible" android:text="@string/activity_code_input_erase_code" style="@style/BottomCodeInputTextView" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketNumpad android:id="@id/numpad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

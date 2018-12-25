@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/swirl_error_off">
+    <target android:name="group_2" android:animation="@anim/swirl_error_state_to_fp_group_2_animation"/>
+    <target android:name="path_2" android:animation="@anim/swirl_error_state_to_fp_path_2_animation"/>
+    <target android:name="path_1" android:animation="@anim/swirl_error_state_to_fp_path_1_animation"/>
+    <target android:name="group_1" android:animation="@anim/swirl_error_state_to_fp_group_1_animation"/>
+    <target android:name="path_3" android:animation="@anim/swirl_error_state_to_fp_path_3_animation"/>
+</animated-vector>

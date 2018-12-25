@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="ru.rocketbank.r2d2.widgets.behavior.RocketSnackbarBehavior">
+        <include layout="@layout/include_toolbar"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/enterZone" android:layout_below="@+id/toolbar">
+            <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@+id/chat" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ru.rocketbank.core.widgets.RocketLoader android:layout_gravity="center" android:id="@+id/loader" android:layout_width="80dp" android:layout_height="80dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/enterZone" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/operationBlock" android:padding="16sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/close" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/close">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/gray_variant_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attached_operation" app:rocket_font="7"/>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.3sp" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" app:rocket_font="7"/>
+                        <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:id="@+id/operationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/amount" android:layout_alignParentLeft="true" app:rocket_font="7"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/delimiterMenu" android:background="@color/black_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/editZone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/actionButton" android:background="@color/transparent" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_support" android:layout_alignParentTop="true"/>
+                <ru.rocketbank.core.widgets.RocketEditText android:textSize="16sp" android:id="@+id/message" android:background="@color/transparent" android:paddingTop="16dp" android:paddingBottom="16dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:hint="@string/write_message" android:maxLines="3" android:layout_toLeftOf="@+id/send" android:layout_toRightOf="@+id/actionButton" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"/>
+                <ImageButton android:id="@+id/send" android:background="@color/transparent" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

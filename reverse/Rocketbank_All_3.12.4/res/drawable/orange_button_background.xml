@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:height="@dimen/migration_button_height">
+        <layer-list>
+            <item android:top="40.0dip" android:bottom="10.0dip">
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="@android:color/transparent" android:endColor="#88333333" android:angle="90.0" />
+                </shape>
+            </item>
+            <item android:top="10.0dip" android:bottom="10.0dip">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3.0dip" />
+                    <solid android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true" android:height="@dimen/migration_button_height">
+        <layer-list>
+            <item android:top="40.0dip" android:bottom="0.0dip">
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="@android:color/transparent" android:endColor="#88333333" android:angle="90.0" />
+                </shape>
+            </item>
+            <item android:top="10.0dip">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3.0dip" />
+                    <solid android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false" android:height="@dimen/migration_button_height">
+        <layer-list>
+            <item android:top="40.0dip" android:bottom="0.0dip">
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="@android:color/transparent" android:endColor="#88333333" android:angle="90.0" />
+                </shape>
+            </item>
+            <item android:top="10.0dip">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3.0dip" />
+                    <solid android:color="@color/gray60" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:height="@dimen/migration_button_height">
+        <layer-list>
+            <item android:top="40.0dip" android:bottom="5.0dip">
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="@android:color/transparent" android:endColor="#88333333" android:angle="90.0" />
+                </shape>
+            </item>
+            <item android:top="10.0dip" android:bottom="10.0dip">
+                <shape android:shape="rectangle">
+                    <corners android:radius="3.0dip" />
+                    <solid android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

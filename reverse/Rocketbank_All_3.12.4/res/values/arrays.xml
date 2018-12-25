@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="budget_status">
+        <item>13 | налогоплательщик (плательщик сборов, за совершение налоговыми органами юридически значимых действий, страховых взносов и иных платежей, администрируемых налоговыми органами) - физическое лицо</item>
+        <item>16 | Участник внешнеэкономической деятельности - физическое лицо</item>
+        <item>24 | Плательщик - физическое лицо, осуществляющее перевод денежных средств в уплату страховых взносов и иных платежей в бюджетную систему Российской Федерации</item>
+        <item>26 | Учредители (участники) должника, собственники имущества должника – унитарного предприятия или третьи лица</item>
+    </string-array>
+    <string-array name="change_avatar_menu">
+        <item>Сделать фото</item>
+        <item>Выбрать из галереи</item>
+        <item>Из Facebook</item>
+        <item>Удалить</item>
+    </string-array>
+    <string-array name="change_cover_menu">
+        <item>Сделать фото</item>
+        <item>Выбрать из галереи</item>
+        <item>Из Facebook</item>
+        <item>Удалить</item>
+    </string-array>
+    <string-array name="change_empty_avatar_menu">
+        <item>Сделать фото</item>
+        <item>Выбрать из галереи</item>
+        <item>Из Facebook</item>
+    </string-array>
+    <string-array name="change_empty_cover_menu">
+        <item>Сделать фото</item>
+        <item>Выбрать из галереи</item>
+        <item>Из Facebook</item>
+    </string-array>
+    <string-array name="choose_date_dialog_array">
+        <item>Период</item>
+        <item>Конкретная дата</item>
+    </string-array>
+    <string-array name="fragment_feed_check">
+        <item>Вы можете выбрать %d</item>
+        <item>Осталось выбрать %d</item>
+        <item>Отлично, вcё выбрано</item>
+    </string-array>
+    <string-array name="half_years">
+        <item>Первое полугодие</item>
+        <item>Второе полугодие</item>
+    </string-array>
+    <string-array name="in_month_array">
+        <item>январе</item>
+        <item>феврале</item>
+        <item>марте</item>
+        <item>апреле</item>
+        <item>мае</item>
+        <item>июне</item>
+        <item>июле</item>
+        <item>августе</item>
+        <item>сентябре</item>
+        <item>октябре</item>
+        <item>ноябре</item>
+        <item>декабре</item>
+    </string-array>
+    <string-array name="material_assistance">
+        <item>Безвозмездная материальная помощь</item>
+        <item>Возмездная материальная помощь</item>
+        <item>Перевод на собственный счет</item>
+    </string-array>
+    <string-array name="month_names">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="months">
+        <item>январе</item>
+        <item>феврале</item>
+        <item>марте</item>
+        <item>апреле</item>
+        <item>мае</item>
+        <item>июне</item>
+        <item>июле</item>
+        <item>августе</item>
+        <item>сентябре</item>
+        <item>октябре</item>
+        <item>ноябре</item>
+        <item>декабре</item>
+    </string-array>
+    <string-array name="months_end">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </string-array>
+    <string-array name="notifications">
+        <item>Push</item>
+        <item>SMS</item>
+    </string-array>
+    <string-array name="quarters">
+        <item>I квартал</item>
+        <item>II квартал</item>
+        <item>III квартал</item>
+        <item>IV квартал</item>
+    </string-array>
+    <string-array name="refill_page_actions">
+        <item>Открыть</item>
+        <item>Скопировать</item>
+        <item>Изменить ссылку</item>
+    </string-array>
+    <string-array name="rocket_roubles">
+        <item>рокетрубль</item>
+        <item>рокетрубля</item>
+        <item>рокетрублей</item>
+    </string-array>
+    <string-array name="tax_basis">
+        <item>0 | Не указан</item>
+        <item>ТК | Требование об уплате таможенных платежей, платежи по которому уплачиваются плательщиками таможенных платежей в соответствии со статьями 114, 115, 116 Федерального закона N 311-ФЗ с использованием электронных терминалов, платежных терминалов и банкоматов</item>
+        <item>КК | Корректировка декларации на товары, платежи по которой уплачиваются плательщиками таможенных платежей в соответствии со статьями 114, 115, 116 Федерального закона N 311-ФЗ с использованием электронных терминалов, платежных терминалов и банкомато</item>
+        <item>ПК | Таможенный приходный ордер, платежи по которому уплачиваются плательщиками таможенных платежей в соответствии со статьями 114, 115, 116 Федерального закона N 311-ФЗ с использованием электронных терминалов, платежных терминалов и банкоматов</item>
+        <item>ДК | Декларация на товары, платежи по которой уплачиваются плательщиками таможенных платежей в соответствии со статьями 114, 115, 116 Федерального закона N 311-ФЗ с использованием электронных терминалов, платежных терминалов и банкоматов</item>
+        <item>ЗТ | Погашение текущей задолженности в ходе процедур, применяемых в деле о банкротстве</item>
+        <item>ТП | Платежи текущего года</item>
+        <item>ТР | Погашение задолженности по требованию налогового органа об уплате налогов (сборов)</item>
+        <item>РС | Погашение рассроченной задолженности</item>
+        <item>ОТ | Погашение отсроченной задолженности</item>
+        <item>ПБ | Погашение должником задолженности в ходе процедур, применяемых в деле о банкротстве</item>
+        <item>ПР | Погашение задолженности, приостановленной к взысканию</item>
+        <item>АР | Погашение задолженности по исполнительному документу</item>
+        <item>ДЕ | Таможенная декларация</item>
+        <item>ПО | Таможенный приходный ордер</item>
+        <item>КТ | Форма корректировки таможенной стоимости и таможенных платежей</item>
+        <item>ИД | Исполнительный документ</item>
+        <item>ИП | Инкассовое поручение</item>
+        <item>ТУ | Требование об уплате таможенных платежей</item>
+        <item>БД | Документы бухгалтерских служб таможенных органов</item>
+        <item>ИН | Погашение инвестиц.налог. кредита; документ инкассации- для таможенных платежей</item>
+        <item>КП | Соглашение о взаимодействии при уплате крупными плательщиками суммарных платежей в централизованном порядке</item>
+        <item>ТЛ | Погашение учредителем (участником) должника, собственником имущества должника – унитарного предприятия или третьим лицом задолженности в ходе процедур, применяемых в деле о банкротстве</item>
+        <item>ЗД | Добровольное погашение задолженности по истекшим налоговым периодам при отсутствии требования об уплате налогов (сборов) от налогового органа</item>
+        <item>АП | Погашение задолженности по акту проверки</item>
+        <item>БФ | Текущие платежи физических лиц - клиентов банка (владельцев счета), уплачиваемые со своего банковского счета</item>
+        <item>ПБ | Погашение должником задолженности в ходе процедур, применяемых в деле о банкротстве</item>
+        <item>РТ | Погашение реструктурируемой задолженности</item>
+        <item>АР | Погашение задолженности по исполнительному документу</item>
+        <item>00 | Иные случаи</item>
+    </string-array>
+    <string-array name="titles_cards_and_deposits">
+        <item>Карты</item>
+        <item>Вклады</item>
+    </string-array>
+    <string-array name="titles_info_card">
+        <item>Тариф</item>
+        <item>Уведомления</item>
+        <item>Смена пин-кода</item>
+        <item>Перевести</item>
+        <item>Реквизиты</item>
+        <item>Заблокировать карту</item>
+    </string-array>
+    <string-array name="titles_info_card_blocked">
+        <item>Тариф</item>
+        <item>Уведомления</item>
+        <item>Смена пин-кода</item>
+        <item>Перевести</item>
+        <item>Реквизиты</item>
+        <item>Разблокировать карту</item>
+    </string-array>
+    <string-array name="vat">
+        <item>@string/vat_included</item>
+        <item>@string/vat_free</item>
+    </string-array>
+</resources>

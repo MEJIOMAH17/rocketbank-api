@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/tariff_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ru.rocketbank.core.widgets.SquareLayout android:gravity="center" android:layout_width="40dp" android:layout_height="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/colorText" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:rocket_font="6"/>
+    </ru.rocketbank.core.widgets.SquareLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/rocketBlack" android:layout_gravity="center_vertical" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+</LinearLayout>

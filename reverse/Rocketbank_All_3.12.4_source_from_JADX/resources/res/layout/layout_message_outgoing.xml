@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:background="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/messageBody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test tesst"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/love" android:visibility="gone" android:layout_width="213dp" android:layout_height="180dp"/>
+</LinearLayout>

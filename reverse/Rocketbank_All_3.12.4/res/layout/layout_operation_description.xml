@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/layout_operation_description_0" android:background="@color/transparent" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/registration_bottom_button_text_color_selector" android:id="@id/rocketRublesInfo" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/what_is_rocketruble" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:rocket_font="medium" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

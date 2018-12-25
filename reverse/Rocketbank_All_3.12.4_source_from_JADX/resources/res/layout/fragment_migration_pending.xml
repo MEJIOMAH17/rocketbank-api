@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/migration_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_top_text_size" android:textColor="@color/migration_hint_top_text_color" android:gravity="center" android:id="@+id/textViewHintTop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="8dp" android:text="@string/migration_pending_hint_top_text" app:rocket_font="0"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp">
+                    <ImageView android:id="@+id/image" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="200dp" android:src="@drawable/printcard" android:scaleType="centerInside" android:maxHeight="@dimen/migration_image_max_height"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/textViewCardHolderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="160dp" app:rocket_font="3"/>
+                </FrameLayout>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_bottom_text_size" android:textColor="@color/migration_hint_bottom_text_color" android:gravity="center" android:id="@+id/textViewHintBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/migration_checking_hint_bottom_text" app:rocket_font="0"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:foregroundGravity="bottom">
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/white" android:id="@+id/button" android:background="@drawable/migration_button_background" android:layout_width="match_parent" android:layout_height="@dimen/migration_button_height" android:text="@string/migration_pending_start_button_text" app:rocket_font="1"/>
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/migration_bottom_button_text_color_selector" android:id="@+id/buttonBottom" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_pending_bottom_button_text" app:rocket_font="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

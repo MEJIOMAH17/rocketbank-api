@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:enterFadeDuration="500" android:exitFadeDuration="500">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:gravity="center" android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp">
+                <bitmap android:gravity="center" android:src="@drawable/check"/>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="oval" android:useLevel="false" android:innerRadius="@dimen/radio_button_color_size" android:thickness="0dp">
+            <solid android:color="@color/transparent"/>
+            <size android:height="@dimen/radio_button_color_size" android:width="@dimen/radio_button_color_size"/>
+        </shape>
+    </item>
+</selector>

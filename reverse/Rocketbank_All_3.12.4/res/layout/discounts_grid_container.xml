@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/discounts_grid_container_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/black_alpha_05" android:id="@id/title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/material_padding" android:layout_marginTop="19.0dip" android:layout_marginRight="@dimen/material_padding" android:layout_marginBottom="19.0dip" />
+    <android.support.v7.widget.CardView android:layout_gravity="center_horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="0.0dip" card_view:cardElevation="0.0dip">
+        <android.support.v7.widget.GridLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchMode="none" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

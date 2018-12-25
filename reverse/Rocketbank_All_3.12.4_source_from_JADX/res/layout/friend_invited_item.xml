@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/commonListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/friend_item" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="18.0sp" android:textColor="@color/rocketBlack" android:gravity="end|center" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/revenue" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:layout_weight="0.0" />
+</LinearLayout>

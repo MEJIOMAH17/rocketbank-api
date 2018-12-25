@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/radio_button_color_0" android:layout_width="@dimen/radio_button_size" android:layout_height="@dimen/radio_button_size" android:layout_margin="@dimen/shop_radio_button_min_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/corner" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/orange_circle" />
+    <ImageView android:layout_gravity="center" android:id="@id/imageView" android:tag="binding_1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <ru.rocketbank.core.widgets.RocketRadioButton android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/button" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" app:rocket_font="medium" />
+</FrameLayout>

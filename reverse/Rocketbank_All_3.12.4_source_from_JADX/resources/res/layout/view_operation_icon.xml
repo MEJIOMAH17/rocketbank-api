@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/roundImage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ru.rocketbank.core.widgets.RocketIconView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/categoryGlymph" android:layout_width="match_parent" android:layout_height="match_parent" app:rocket_font="5"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/operationIconText" android:layout_width="match_parent" android:layout_height="match_parent" app:rocket_font="5"/>
+    <ImageView android:id="@+id/statusImage" android:visibility="gone" android:layout_width="14dp" android:layout_height="16dp" android:layout_marginLeft="26dp" android:layout_marginTop="26dp" android:src="@drawable/ic_badge_in"/>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="206.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/operation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/operation" android:drawableLeft="@drawable/ic_support_operation" style="@style/chat_popup_text" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera" android:drawableLeft="@drawable/ic_support_camera" style="@style/chat_popup_text" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery" android:drawableLeft="@drawable/ic_support_gallery" style="@style/chat_popup_text" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/love" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/love" android:drawableLeft="@drawable/ic_support_love" app:rocket_font="regular" style="@style/chat_popup_text" />
+</LinearLayout>

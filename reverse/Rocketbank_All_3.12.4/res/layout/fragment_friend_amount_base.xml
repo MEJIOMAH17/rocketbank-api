@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbarStyle="insideOverlay" android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.r2d2.widget.AccountWidget android:gravity="center" android:id="@id/sourceViewPager" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="14.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" android:animateLayoutChanges="true" style="@style/commonListItemStyle">
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" layout="@layout/transfer_contact_recipient" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:textColor="#ff484849" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_userfeed_refill_transfer_sum_caption" />
+                <ru.rocketbank.core.widgets.RocketEditText android:textSize="58.0sp" android:gravity="center" android:id="@id/edittext_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" rocket:rawInputType="KEYBOARD_12KEY" rocket:rocket_font="light" style="@style/RocketEditText" />
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@id/evaluationResult" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewSwitcher android:id="@id/commission_switcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/commission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" rocket:rocket_font="thin" />
+                    <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </ViewSwitcher>
+                <ru.rocketbank.core.widgets.RocketTextInputLayout android:textColorHint="#ffbcbcbc" android:gravity="center" android:id="@id/inputLayoutComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                    <ru.rocketbank.r2d2.friends.HashTagEditText android:textSize="16.0sp" android:ellipsize="start" android:gravity="center" android:id="@id/edittext_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin" style="@style/RocketEditText" />
+                </ru.rocketbank.core.widgets.RocketTextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.CalculatorKeyboard android:id="@id/calculatorKeyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

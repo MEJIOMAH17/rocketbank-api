@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="48dp">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="24dp" android:textColor="#9e9e9e" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="32dp" app:rocket_font="4"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:textColor="@color/sliding_menu_passive_text" android:id="@+id/caption" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_message_out_image_0" android:paddingLeft="13.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+        <FrameLayout android:id="@id/content" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <ImageView android:id="@id/contentImage" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/indeterminate_progress" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.MaterialProgressBar.ProgressBar.NoPadding" />
+        </FrameLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@id/retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/retry_cap" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:layout_gravity="right" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" />
+</LinearLayout>

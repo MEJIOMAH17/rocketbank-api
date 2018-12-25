@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/item_more" android:padding="16dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_vert_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <FrameLayout android:id="@+id/fullLoogo" android:paddingLeft="16dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/bck" android:layout_width="wrap_content" android:layout_height="40dp" android:elevation="3dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/logo" android:layout_width="40dp" android:layout_height="40dp" android:elevation="3dp"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/item_more" android:layout_toRightOf="@+id/fullLoogo" android:layout_centerVertical="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/black_universal" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/secureDots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/dots"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/black_universal_50" android:id="@+id/tv_number_card" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

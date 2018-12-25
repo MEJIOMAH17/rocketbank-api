@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/feed_item_head"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/feed_item_elevation">
+        <RelativeLayout android:background="@color/blue" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/main" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/image" android:layout_width="67dp" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/logo_head" android:layout_centerVertical="true"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/white" android:gravity="left" android:id="@+id/waitingStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migaration_new_card" android:layout_toRightOf="@+id/image" android:layout_below="@+id/title" android:layout_centerVertical="true" android:lineSpacingExtra="2dp" app:rocket_font="7"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

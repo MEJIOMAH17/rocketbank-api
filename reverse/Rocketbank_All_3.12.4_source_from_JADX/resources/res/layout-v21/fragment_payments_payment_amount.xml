@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:titleTextColor="@color/rocketBlack">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:id="@+id/scrollView" android:background="@color/payment_details_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_details_fragment_margin" android:layout_marginBottom="@dimen/payment_details_fragment_margin">
+            <ru.rocketbank.r2d2.widget.AccountWidget android:gravity="center" android:id="@+id/sourceViewPager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginTop="14dp"/>
+            <include layout="@layout/item_provider"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/gray_variant_1" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fragment_payment_amount_summ_caption"/>
+            <ru.rocketbank.core.widgets.RocketEditText android:textSize="64sp" android:gravity="center" android:id="@+id/payment_amount_edittext_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_details_fragment_margin" android:layout_marginRight="@dimen/payment_details_fragment_margin" android:inputType="numberDecimal" app:rocket_font="0" style="@style/RocketEditText"/>
+            <ViewSwitcher android:id="@+id/viewSwitcher" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_details_fragment_margin" android:layout_marginRight="@dimen/payment_details_fragment_margin">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/comissionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="2"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/comission1TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="2"/>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </ViewSwitcher>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/dialog_notification_view_0" android:paddingLeft="32dp" android:paddingTop="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="20sp" android:id="@+id/push_radio_button" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/fragment_option_push"/>
+        <RadioButton android:textSize="20sp" android:id="@+id/sms_radio_button" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fragment_option_sms"/>
+    </RadioGroup>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="20sp" android:id="@+id/tv_info" android:tag="binding_4" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="0"/>
+</LinearLayout>

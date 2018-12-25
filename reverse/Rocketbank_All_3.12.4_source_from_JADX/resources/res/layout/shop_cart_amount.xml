@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/shop_cart_amount_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/rocketBlack" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_amount_title" app:rocket_font="7"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/rocketBlack" android:gravity="center_vertical" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" app:rocket_font="1"/>
+</LinearLayout>

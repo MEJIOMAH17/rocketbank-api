@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/list_item_card_limit_0" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/rocketBlack" android:id="@id/textview_name" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" android:lineSpacingExtra="3.0dip" app:rocket_font="regular" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/black_universal_50" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/textview_value" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="200.0dip" android:layout_weight="3.0" app:rocket_font="regular" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/main.appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cra_refill" />
+                <ru.rocketbank.core.widgets.RocketButton android:enabled="false" android:textSize="15.0sp" android:textColor="@drawable/btn_next_color_selector" android:layout_gravity="center|right" android:id="@id/btnNext" android:background="@color/transparent" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_cap" app:rocket_font="medium" style="?android:borderlessButtonStyle" />
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@id/container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

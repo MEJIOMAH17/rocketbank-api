@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="33.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/textview_number" android:background="@drawable/ripple_pin_button" android:layout_width="67.0dip" android:layout_height="67.0dip" rocket:rocket_font="regular" />
+</merge>

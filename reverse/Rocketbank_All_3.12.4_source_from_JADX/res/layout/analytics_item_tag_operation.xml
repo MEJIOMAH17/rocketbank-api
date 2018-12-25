@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/analytics_item_tag_operation_0" android:layout_width="fill_parent" android:layout_height="@dimen/widget_progress_bar_chart_bar_height" style="@style/commonListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewItem" android:tag="binding_1" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_margin="16.0dip" android:src="@drawable/material_drawer_circle_mask" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/analytics_operation_item_text_size" android:textColor="@color/rocketBlack" android:gravity="right" android:id="@id/textViewAmount" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/textViewAmount" android:layout_toRightOf="@id/imageViewItem" android:layout_centerVertical="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/analytics_operation_item_description_text_size" android:textColor="@color/gray" android:ellipsize="end" android:gravity="left" android:id="@id/textViewDate" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/analytics_operation_item_text_size" android:textColor="@color/blue_tag_analytics" android:gravity="left" android:id="@id/textViewItem" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

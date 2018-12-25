@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/bank_info_details" android:tag="layout/bank_info_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/transfer_to_bank_account_form_margin" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+        <ImageView android:id="@+id/img_logo" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:scaleType="centerCrop"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/textview_transfers_bank_bank_name" android:tag="binding_1" style="@style/TransfersBankCaptionPlaceholder"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_2" android:text="@string/transfers_bank_korr_number_caption" style="@style/TransfersBankKorrNumberCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/textview_transfers_bank_korr_number" android:tag="binding_3" android:layout_marginLeft="5dp" app:rocket_font="7" style="@style/TransfersBankKorrNumberTextPlaceholder"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/underline_orange" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginBottom="10dp"/>
+</LinearLayout>

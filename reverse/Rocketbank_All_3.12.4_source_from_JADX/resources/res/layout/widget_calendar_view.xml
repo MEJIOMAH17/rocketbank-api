@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/widget_calendar_view_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ru.rocketbank.core.widgets.RocketTextView android:textAppearance="@android:style/TextAppearance.Medium" android:textSize="19sp" android:textColor="@color/black_universal" android:layout_gravity="center" android:id="@+id/calendar_date_display" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:rocket_font="1"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/calendar_header" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mon" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/tue" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/wen" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/thu" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fri" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sat" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black_universal_70" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sun" android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v7.widget.GridLayout android:gravity="center" android:id="@+id/calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:stretchMode="none"/>
+</LinearLayout>

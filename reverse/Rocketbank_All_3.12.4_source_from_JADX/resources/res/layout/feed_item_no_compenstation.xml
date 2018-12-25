@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="2dp">
+    <RelativeLayout android:background="@color/white" android:paddingTop="26dp" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cat" android:layout_centerHorizontal="true"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/rocketBlack" android:gravity="center_horizontal" android:id="@+id/title" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_compenstation" android:layout_below="@+id/cat" app:rocket_font="7"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/rocketBlack" android:gravity="center_horizontal" android:id="@+id/left" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/title" app:rocket_font="7"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

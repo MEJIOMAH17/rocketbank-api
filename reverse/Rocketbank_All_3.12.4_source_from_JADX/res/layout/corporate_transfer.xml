@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/corporateView" android:tag="layout/corporate_transfer_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_inn_caption" style="@style/TransfersBankInputCaption" />
+    <FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@id/inn" android:tag="binding_1" android:hint="@string/transfers_bank_receiver_inn_placeholder" android:maxLength="12" android:inputType="number" style="@style/TransfersBankInputText" />
+        <ProgressBar android:layout_gravity="end|center" android:id="@id/innProgressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_budget_receiver_kpp_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/kpp" android:tag="binding_2" android:hint="@string/transfers_bank_receiver_kpp_placeholder" rocket:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/recipient_name" android:tag="binding_3" android:hint="@string/transfers_bank_receiver_ur_placeholder" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+    <include android:id="@id/include_gkh" layout="@layout/gkh_layput" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start" android:text="@string/transfers_bank_receiver_target_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="end" android:tag="binding_4" android:layout_width="wrap_content" style="@style/TransfersBankInputCaption" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/editTextCorporatePurpose" android:tag="binding_5" android:hint="@string/transfers_bank_receiver_target_hint" android:maxLength="210" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+</LinearLayout>

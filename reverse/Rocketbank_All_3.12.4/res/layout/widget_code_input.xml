@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.r2d2.widgets.BackgroundImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shadow="true" />
+    <ru.rocketbank.core.widgets.RocketSMSGroup android:id="@id/smsgroup" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:allow_code_reset="true" app:group_title="@string/rocketbank" />
+</FrameLayout>

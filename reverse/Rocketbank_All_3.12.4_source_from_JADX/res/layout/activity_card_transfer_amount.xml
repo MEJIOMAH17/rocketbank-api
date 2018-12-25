@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:tag="layout/activity_card_transfer_amount_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarBlock" layout="@layout/layout_toolbar_with_button" />
+    <android.support.v4.widget.NestedScrollView android:scrollbarStyle="insideOverlay" android:id="@id/scroll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.r2d2.widget.AccountWidget android:gravity="center" android:id="@id/accountWidget" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="14.0dip" />
+            <RelativeLayout android:background="@color/white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="32.0dip">
+                <android.support.v7.widget.CardView android:id="@id/fullLoogo" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" bind:cardCornerRadius="4.0dip" bind:cardElevation="3.0dip">
+                    <ImageView android:id="@id/backround" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </android.support.v7.widget.CardView>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/fullLoogo">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/black_universal" android:id="@id/cardName" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/dots" />
+                        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/black_universal_50" android:id="@id/cardNumber" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:textColor="@color/gray_bc" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ru.rocketbank.core.widgets.RocketEditText android:textSize="64.0sp" android:gravity="center" android:id="@id/amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:maxLength="8" android:inputType="number" bind:rocket_font="light" style="@style/RocketEditText" />
+                <ViewSwitcher android:id="@id/commission_switcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/commission" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" bind:rocket_font="light" />
+                    </LinearLayout>
+                    <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </ViewSwitcher>
+            </LinearLayout>
+            <android.support.v7.widget.CardView android:id="@id/comment_card" android:tag="binding_5" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" bind:cardBackgroundColor="@color/white" bind:cardCornerRadius="2.0dip" bind:cardElevation="4.0dip">
+                <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/list_item_primary" android:id="@id/comment" android:tag="binding_6" android:padding="16.0dip" android:paddingLeft="15.0dip" android:paddingTop="21.0dip" android:paddingRight="15.0dip" android:paddingBottom="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:rocket_font="light" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

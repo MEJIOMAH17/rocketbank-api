@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:id="@id/main.appbar" android:tag="layout/toolbar_with_button_only_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <ru.rocketbank.core.widgets.RocketButton android:textSize="15.0sp" android:textColor="@drawable/btn_next_color_selector" android:gravity="center" android:layout_gravity="center|right" android:id="@id/next" android:tag="binding_1" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" app:rocket_font="bold" style="?android:borderlessButtonStyle" />
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

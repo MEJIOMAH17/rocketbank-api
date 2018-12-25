@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white_smoke" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/feed_item_head"/>
+    <RelativeLayout android:id="@+id/operation" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="70dp" android:outlineProvider="bounds" style="@style/commonListItemStyle">
+        <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@+id/operationIcon" android:layout_width="50dp" android:layout_height="50dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/containerBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:minHeight="40dp" android:layout_toRightOf="@+id/operationIcon">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/amountRocketRubles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="17sp" android:textColor="@color/rocketBlack" android:gravity="right" android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="457583" app:rocket_font="7"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/gray_aaaaaa" android:id="@+id/rocketroubles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="рокетрублей" app:rocket_font="7"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/nameComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/amountRocketRubles" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/rocketBlack" android:ellipsize="end" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="texttt" app:rocket_font="7"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/gray_aaaaaa" android:id="@+id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/buttons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="12dp" android:layout_below="@+id/containerBody">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/rocketBlack30" android:gravity="center" android:id="@+id/additionalAction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="ADDITIONAL" app:rocket_font="7"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/orange" android:gravity="center" android:id="@+id/mainAction" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" app:rocket_font="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

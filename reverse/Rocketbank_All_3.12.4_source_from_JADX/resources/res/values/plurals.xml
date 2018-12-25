@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days">
+        <item>дней</item>
+        <item>день</item>
+        <item>дня</item>
+        <item>дня</item>
+        <item>дней</item>
+        <item>дня</item>
+    </plurals>
+    <plurals name="friends">
+        <item>друзей присоединилось</item>
+        <item>друг присоединился</item>
+        <item>друга присоединилось</item>
+        <item>друга присоединилось</item>
+        <item>друзей присоединилось</item>
+        <item>друга присоединилось</item>
+    </plurals>
+    <plurals name="money_malina">
+        <item>баллов МАЛИНА</item>
+        <item>балл МАЛИНА</item>
+        <item>балла МАЛИНА</item>
+        <item>балла МАЛИНА</item>
+        <item>баллов МАЛИНА</item>
+        <item>баллов МАЛИНА</item>
+    </plurals>
+    <plurals name="money_malina_first_cap">
+        <item>Баллов МАЛИНА</item>
+        <item>Балл МАЛИНА</item>
+        <item>Балла МАЛИНА</item>
+        <item>Балла МАЛИНА</item>
+        <item>Баллов МАЛИНА</item>
+        <item>Баллов МАЛИНА</item>
+    </plurals>
+    <plurals name="money_metropolis">
+        <item>M-рублей</item>
+        <item>M-рубль</item>
+        <item>M-рубля</item>
+        <item>M-рубля</item>
+        <item>M-рублей</item>
+        <item>M-рублей</item>
+    </plurals>
+    <plurals name="money_metropolis_first_cap">
+        <item>M-рублей</item>
+        <item>M-рубль</item>
+        <item>M-рубля</item>
+        <item>M-рубля</item>
+        <item>M-рублей</item>
+        <item>M-рублей</item>
+    </plurals>
+    <plurals name="money_place">
+        <item>мест</item>
+        <item>место</item>
+        <item>места</item>
+        <item>места</item>
+        <item>мест</item>
+        <item>мест</item>
+    </plurals>
+    <plurals name="money_rocket">
+        <item>рокетрублей</item>
+        <item>рокетрубль</item>
+        <item>рокетрубля</item>
+        <item>рокетрубля</item>
+        <item>рокетрублей</item>
+        <item>рокетрублей</item>
+    </plurals>
+    <plurals name="money_rocket_first_cap">
+        <item>Рокетрублей</item>
+        <item>Рокетрубль</item>
+        <item>Рокетрубля</item>
+        <item>Рокетрубля</item>
+        <item>Рокетрублей</item>
+        <item>Рокетрублей</item>
+    </plurals>
+    <plurals name="money_tripcoins">
+        <item>трипкоиноы</item>
+        <item>трипкоин</item>
+        <item>трипкоина</item>
+        <item>трипкоина</item>
+        <item>трипкоинов</item>
+        <item>трипкоинов</item>
+    </plurals>
+    <plurals name="months">
+        <item>месяцев</item>
+        <item>месяц</item>
+        <item>месяца</item>
+        <item>месяца</item>
+        <item>месяцев</item>
+        <item>месяца</item>
+    </plurals>
+    <plurals name="operations">
+        <item>%1$d операций</item>
+        <item>%1$d операция</item>
+        <item>%1$d операции</item>
+        <item>%1$d операции</item>
+        <item>%1$d операций</item>
+        <item>%1$s операций</item>
+    </plurals>
+    <plurals name="pspa_your_friends">
+        <item>ваших друзей уже пользуются рокетбанком</item>
+        <item>ваш друг уже пользуется рокетбанком</item>
+        <item>ваших друга уже пользуются рокетбанком</item>
+        <item>ваших друга уже пользуются рокетбанком</item>
+        <item>ваших друзей уже пользуются рокетбанком</item>
+        <item>ваших друга уже пользуются рокетбанком</item>
+    </plurals>
+</resources>

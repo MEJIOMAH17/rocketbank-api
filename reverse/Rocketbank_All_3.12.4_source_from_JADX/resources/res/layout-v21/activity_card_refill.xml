@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:theme="@style/AppTheme_LightAppBarOverlay" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:popupTheme="@style/AppTheme_PopupOverlay">
+        <ru.rocketbank.core.widgets.RocketButton android:enabled="false" android:textSize="15sp" android:textColor="@drawable/btn_next_color_selector" android:layout_gravity="right" android:id="@+id/btnNext" android:background="@drawable/ripple_selector" android:paddingLeft="6dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginRight="5dp" android:text="ПОПОЛНИТЬ" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:rocket_font="1" style="?android:attr/borderlessButtonStyle"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

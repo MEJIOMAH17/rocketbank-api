@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <io.codetail.widget.RevealFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/backgroundView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </io.codetail.widget.RevealFrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:animateLayoutChanges="true">
+                <ru.rocketbank.core.widgets.RocketLoader android:id="@id/rocketLoader" android:layout_width="105.0dip" android:layout_height="105.0dip" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/gray60" android:id="@id/textViewStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="16.0dip" android:animateLayoutChanges="true">
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/buttonTop" android:background="@drawable/orange_button_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/migration_button_height" android:text="@string/retry_cap" app:rocket_font="medium" />
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/registration_bottom_button_text_color_selector" android:layout_gravity="bottom" android:id="@id/buttonBottom" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close_cap" app:rocket_font="medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

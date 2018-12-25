@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarStyle="insideOverlay" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="32dp" layout="@layout/template_transfer"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="#484849" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cra_amount"/>
+            <ru.rocketbank.core.widgets.RocketEditText android:textSize="64sp" android:gravity="center" android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:maxLength="8" android:inputType="number" app:rocket_font="0" style="@style/RocketEditText"/>
+            <ViewSwitcher android:id="@+id/commission_switcher" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/commission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" app:rocket_font="2"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="center" android:id="@+id/infoRocketTextView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </ViewSwitcher>
+        </LinearLayout>
+        <android.support.v7.widget.CardView android:id="@+id/comment_card" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="2dp" app:cardElevation="4dp">
+            <FrameLayout android:id="@+id/comment_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/list_item_primary" android:id="@+id/comment" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="0"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

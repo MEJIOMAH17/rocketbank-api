@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/black_universal_50" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/dayTitle" android:background="@color/background_gray_50" android:paddingLeft="14dp" android:paddingBottom="6.5dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="Today" app:rocket_font="7"/>
+</merge>

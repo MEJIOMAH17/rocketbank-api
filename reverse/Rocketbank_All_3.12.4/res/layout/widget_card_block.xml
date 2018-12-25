@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/widget_card_block_content_backround" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/widget_card_block_content_margin">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/widget_card_block_linearlayout_pack" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="30.0dip" android:textColor="#ff2c2c2c" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/widget_card_block_header" android:lineSpacingExtra="3.0dip" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0dip" android:textColor="#ff2c2c2c" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/widget_card_block_description_top" android:lineSpacingExtra="3.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/widget_card_block_lock_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_card_block_lock_button" android:scaleType="center" />
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0dip" android:textColor="#ff6a6a6a" android:gravity="center|top" android:id="@id/widget_card_block_textview_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="@string/widget_card_block_description_bottom" android:lineSpacingExtra="3.0dip" rocket:rocket_font="medium" />
+    </LinearLayout>
+</merge>

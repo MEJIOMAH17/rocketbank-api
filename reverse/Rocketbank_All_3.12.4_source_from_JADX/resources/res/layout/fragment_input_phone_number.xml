@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_input_phone_number_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarInclude" layout="@layout/layout_toolbar_with_button"/>
+    <android.support.v4.widget.NestedScrollView android:paddingLeft="@dimen/material_padding" android:paddingRight="@dimen/material_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/phone_text_size" android:gravity="center" android:id="@+id/textViewHintBottom" android:paddingTop="@dimen/material_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_registration_phone_textview_hint" android:layout_below="@+id/relative_logo" app:rocket_font="0"/>
+            <LinearLayout android:id="@+id/layout_phone_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_phone_number_margin" android:layout_below="@+id/textViewHintBottom">
+                <ru.rocketbank.core.widgets.RocketEditText android:textSize="@dimen/phone_text_size" android:id="@+id/country_code" android:layout_width="@dimen/country_code_width" android:layout_height="wrap_content" android:text="@string/activity_registration_phone_textview_number_hint" android:maxLines="1" android:inputType="phone" android:imeOptions="actionNext" app:rocket_font="0"/>
+                <ru.rocketbank.core.widgets.RocketEditTextPhone android:textSize="@dimen/phone_text_size" android:textColorHint="@color/list_item_secondary" android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/activity_registration_phone_textedit_hint" android:maxLines="1" android:maxLength="20" android:inputType="phone" android:imeOptions="actionDone" android:textCursorDrawable="@null" app:rocket_font="0" style="@style/RocketEditText"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

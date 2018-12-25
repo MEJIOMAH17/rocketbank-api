@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rocketbank.core.widgets.SquareLayout android:id="@id/discount_picture" android:tag="layout/discount_category_item_0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" grid:layout_columnWeight="1.0" grid:layout_rowWeight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card="http://schemas.android.com/apk/res-auto" xmlns:grid="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" grid:cardCornerRadius="4.0dip" grid:cardElevation="0.0dip">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/imageView" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/square_img_description" />
+    </android.support.v7.widget.CardView>
+</ru.rocketbank.core.widgets.SquareLayout>

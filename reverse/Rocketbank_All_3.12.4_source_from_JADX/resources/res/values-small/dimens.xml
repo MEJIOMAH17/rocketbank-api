@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_edit_text_textsize">20sp</dimen>
+    <dimen name="card_static_text_textsize">12sp</dimen>
+    <dimen name="credit_card_bottom_margin">20dp</dimen>
+    <dimen name="credit_card_edit_bottom_margin">10dp</dimen>
+    <dimen name="credit_card_height">168dp</dimen>
+    <dimen name="credit_card_width">279dp</dimen>
+    <dimen name="credit_card_width_over">282dp</dimen>
+    <dimen name="first_refill_text_margin">14dp</dimen>
+    <dimen name="refill_option_height">128dp</dimen>
+    <dimen name="refill_option_margin_right">8dp</dimen>
+    <dimen name="refill_option_margin_top">8dp</dimen>
+    <dimen name="refill_option_width">131.5dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="13dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon" android:layout_width="@dimen/dimen_icon_size" android:layout_height="@dimen/dimen_icon_size"/>
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="12sp" android:textColor="#bcbcbc" android:gravity="center" android:id="@+id/who" android:layout_width="58dp" android:layout_height="wrap_content" android:lines="3" android:singleLine="true" app:rocket_font="7"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/messageBody" android:background="@drawable/white_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="@color/gray_variant_1" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+                <RatingBar android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="19.6dp" android:layout_marginTop="7.3dp" android:progressDrawable="@drawable/progress_rating" android:numStars="5" android:rating="5" android:stepSize="1"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="13sp" android:textColor="@color/orange" android:layout_gravity="right" android:id="@+id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/comment_cap" app:rocket_font="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

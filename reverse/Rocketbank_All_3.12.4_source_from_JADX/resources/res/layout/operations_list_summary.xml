@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ru.rocketbank.core.widgets.SquareLayout android:id="@+id/square_layout" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <ImageView android:id="@+id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignTop="@+id/square_layout" android:layout_alignBottom="@+id/square_layout"/>
+    <ImageView android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/square_layout" android:layout_alignBottom="@+id/square_layout" android:alpha="0.3"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="72dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ru.rocketbank.core.widgets.ContactAvatarView android:id="@+id/header_avatar" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="24dp" app:textSize="32sp"/>
+        <ru.rocketbank.core.widgets.RocketMoneyTextView android:textSize="48sp" android:textColor="#ffffff" android:id="@+id/operations_list_summary_textview_roubles" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="0"/>
+        <ru.rocketbank.core.widgets.RocketMoneyTextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/operations_list_summary_textview_roubles_rocket" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="0"/>
+    </LinearLayout>
+</RelativeLayout>

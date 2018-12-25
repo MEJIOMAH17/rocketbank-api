@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/main_appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cra_refill"/>
+                <ru.rocketbank.core.widgets.RocketButton android:enabled="false" android:textSize="15sp" android:textColor="@drawable/btn_next_color_selector" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btnNext" android:background="@color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_cap" app:rocket_font="1" style="?android:attr/borderlessButtonStyle"/>
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

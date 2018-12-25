@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/root_view" android:background="@color/white" android:padding="13dp" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/black_universal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="#9a9a9a" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/title" app:rocket_font="7"/>
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle_right_black" android:scaleType="center" android:layout_alignParentRight="true"/>
+</RelativeLayout>

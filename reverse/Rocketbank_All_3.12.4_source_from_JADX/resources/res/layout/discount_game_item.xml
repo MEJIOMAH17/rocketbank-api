@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rocketbank.core.widgets.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/discount_game_item_0" android:padding="@dimen/material_padding" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_columnWeight="1" app:layout_rowWeight="1">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/game_image" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="55dp" android:minHeight="55dp"/>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@+id/percent_background" android:tag="binding_1" android:padding="2dp" android:layout_width="30dp" android:layout_height="30dp" android:minWidth="25dp" android:minHeight="25dp"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</ru.rocketbank.core.widgets.SquareLayout>

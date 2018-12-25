@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/zoom_panel" android:paddingRight="@dimen/material_padding" android:paddingBottom="@dimen/zoom_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/button_plus" android:background="@drawable/ic_map_more" android:layout_width="@dimen/zoom_button_radius" android:layout_height="@dimen/zoom_button_radius" />
+    <ImageButton android:id="@id/button_minus" android:background="@drawable/ic_map_less" android:layout_width="@dimen/zoom_button_radius" android:layout_height="@dimen/zoom_button_radius" android:layout_marginTop="@dimen/zoom_button_space" />
+</LinearLayout>

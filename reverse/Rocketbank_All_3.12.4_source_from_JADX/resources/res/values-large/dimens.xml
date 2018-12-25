@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440dp</dimen>
+    <dimen name="abc_dialog_fixed_height_major">60%</dimen>
+    <dimen name="abc_dialog_fixed_height_minor">90%</dimen>
+    <dimen name="abc_dialog_fixed_width_major">60%</dimen>
+    <dimen name="abc_dialog_fixed_width_minor">90%</dimen>
+    <dimen name="abc_dialog_min_width_major">55%</dimen>
+    <dimen name="abc_dialog_min_width_minor">80%</dimen>
+    <dimen name="card_edit_text_textsize">24sp</dimen>
+    <dimen name="card_size_height">329dp</dimen>
+    <dimen name="card_size_width">549dp</dimen>
+    <dimen name="card_static_text_textsize">15sp</dimen>
+    <dimen name="credit_card_edit_bottom_margin">16dp</dimen>
+    <dimen name="credit_card_height">206dp</dimen>
+    <dimen name="credit_card_width">343dp</dimen>
+    <dimen name="item_offset">20dp</dimen>
+    <dimen name="ratio_offset">0.1px</dimen>
+    <dimen name="refill_option_height">164dp</dimen>
+    <dimen name="refill_option_margin_right">11dp</dimen>
+    <dimen name="refill_option_margin_top">16dp</dimen>
+    <dimen name="refill_option_width">166dp</dimen>
+</resources>

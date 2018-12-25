@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="500" android:exitFadeDuration="500"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="@color/orange_20" />
+    <item android:state_checked="true" android:color="@color/white" />
+    <item android:state_checked="false" android:color="@color/orange" />
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/feed_item_transfer_to_safe_account_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/feed_item_head" />
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0dip" android:textColor="@color/rocketBlack70" android:id="@id/headerText" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rocket_font="regular" />
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="13.0dip" android:textColor="@color/rocketBlack30" android:id="@id/info_button" android:tag="binding_2" android:background="?selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" app:rocket_font="medium" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="13.0dip" android:textColor="@color/orange" android:id="@id/confirm_button" android:tag="binding_3" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" app:rocket_font="medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

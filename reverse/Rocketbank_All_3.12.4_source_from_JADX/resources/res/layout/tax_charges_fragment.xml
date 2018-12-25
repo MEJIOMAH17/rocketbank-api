@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/tax_charges_fragment_0" android:paddingBottom="@dimen/transfer_to_bank_account_form_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/rocketTextView2" android:text="@string/inn_title" style="@style/TransfersBankInputCaption"/>
+    <ru.rocketbank.core.widgets.RocketEditText android:tag="binding_1" android:hint="000000000000" app:rawInputType="3" style="@style/TransfersBankInputText"/>
+</LinearLayout>

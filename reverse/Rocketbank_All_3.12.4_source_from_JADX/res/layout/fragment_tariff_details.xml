@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_tariff_details_0" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card="http://schemas.android.com/apk/res-auto" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" rocket:cardCornerRadius="5.0dip" rocket:cardElevation="32.0dip" rocket:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/header_tariff" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.5">
+                <ImageView android:id="@id/tariff_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/imageViewInfinity" android:tag="binding_1" android:paddingBottom="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_infinity_tariff" />
+                <RelativeLayout android:orientation="vertical" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tariff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pa_tariff" />
+                    <me.grantland.widget.AutofitTextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/tariff_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:maxLines="1" android:layout_below="@id/tariff" />
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="38.0sp" android:textColor="@color/white" android:id="@id/price" android:tag="binding_3" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/month" android:layout_alignParentLeft="true" rocket:rocket_font="light" />
+                    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/white" android:id="@id/month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/in_month" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/items_container" android:tag="binding_4" android:paddingLeft="25.0dip" android:paddingTop="12.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.5">
+                <include android:id="@id/item1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.1" layout="@layout/tariff_item" />
+                <include android:id="@id/item2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.1" layout="@layout/tariff_item" />
+                <include android:id="@id/item3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.1" layout="@layout/tariff_item" />
+            </LinearLayout>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="13.0sp" android:textColor="@color/orange_variant_2" android:gravity="center" android:id="@id/description_link" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/full_description" android:layout_weight="1.0" />
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/activate" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" rocket:rocket_font="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

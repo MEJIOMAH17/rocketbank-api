@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/smsnumber1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sms_input_small_margin" android:layout_marginRight="@dimen/sms_input_small_margin" android:src="@drawable/round_loader_stroke" android:contentDescription="@string/activity_registration_sms_input" />
+        <ImageView android:id="@id/smsnumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sms_input_small_margin" android:layout_marginRight="@dimen/sms_input_small_margin" android:src="@drawable/round_loader_stroke" android:contentDescription="@string/activity_registration_sms_input" />
+        <ImageView android:id="@id/smsnumber3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sms_input_small_margin" android:layout_marginRight="@dimen/sms_input_small_margin" android:src="@drawable/round_loader_stroke" android:contentDescription="@string/activity_registration_sms_input" />
+        <ImageView android:id="@id/smsnumber4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sms_input_small_margin" android:layout_marginRight="@dimen/sms_input_small_margin" android:src="@drawable/round_loader_stroke" android:contentDescription="@string/activity_registration_sms_input" />
+    </LinearLayout>
+</merge>

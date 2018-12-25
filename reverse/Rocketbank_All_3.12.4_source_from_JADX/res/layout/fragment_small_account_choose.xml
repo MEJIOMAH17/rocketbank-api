@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_small_account_choose_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_gravity="center" android:orientation="vertical" android:id="@id/card" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_margin="2.0dip" app:cardBackgroundColor="@color/white">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="19.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="19.0dip">
+            <ImageView android:id="@id/icon" android:tag="binding_1" android:layout_width="30.0dip" android:layout_height="24.0dip" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/rocketBlack70" android:ellipsize="end" android:id="@id/name" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" app:rocket_font="regular" />
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="22.0sp" android:textColor="@color/rocketBlack" android:id="@id/amount" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_below="@id/name" app:rocket_font="light" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

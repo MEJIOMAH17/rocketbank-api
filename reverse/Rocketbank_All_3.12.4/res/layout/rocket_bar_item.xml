@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/feed_item_head" />
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="0.0dip" app:cardElevation="2.0dip">
+        <RelativeLayout android:id="@id/operation" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip">
+            <ru.rocketbank.core.widgets.BarChartView android:id="@id/diagram" android:background="@color/white" android:paddingLeft="19.0dip" android:paddingTop="25.0dip" android:paddingRight="25.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="203.0dip" app:bar_round_x="2.0dip" app:bar_round_y="2.0dip" app:bar_width="13.0dip" app:hint_color="@color/rocketBlack" app:hint_count="6" app:hint_font="medium" app:hint_padding="16.0dip" app:hint_size="8.0sp" app:label_font="regular" app:label_text_color="@color/gray60" app:label_text_size="11.0sp" app:label_width="13.0dip" app:line_color="@color/gray_variant_2_24" app:space_between_label="27.0dip" app:space_label_top="13.0dip" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

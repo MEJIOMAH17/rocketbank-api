@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_miles_compensation_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" app:cardCornerRadius="0.0dip" app:cardElevation="2.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you_have" />
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="46.0sp" android:id="@id/rocketAmount" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="22.0dip" app:rocket_font="light" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:id="@id/rocketRoublesText" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="light" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:id="@id/description" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:rocket_font="light" />
+            <android.support.v7.widget.CardView android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" app:cardElevation="2.0dip">
+                <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/white" android:gravity="center" android:background="#ffffa726" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compensate_cap" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

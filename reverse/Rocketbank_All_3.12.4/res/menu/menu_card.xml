@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/rename" android:title="@string/rename_card" app:showAsAction="never" />
+    <item android:id="@id/support" android:title="@string/write_to_support" app:showAsAction="never" />
+</menu>

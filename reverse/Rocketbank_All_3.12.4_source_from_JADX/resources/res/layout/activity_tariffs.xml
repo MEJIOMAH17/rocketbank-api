@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_tariffs_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ru.rocketbank.core.widgets.viewpagerindicator.CirclePageIndicator android:id="@+id/pager_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" app:fillColor="@color/white" app:pageColor="@color/page_circle_color" app:radius="6dp" app:strokeColor="@android:color/transparent"/>
+</RelativeLayout>

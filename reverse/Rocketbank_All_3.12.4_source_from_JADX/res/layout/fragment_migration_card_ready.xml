@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/migration_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_top_text_size" android:textColor="@color/migration_hint_top_text_color" android:gravity="center" android:id="@id/textViewHintTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/migration_card_ready_hint_top_text" app:rocket_font="light" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_bottom_text_size" android:textColor="@color/migration_hint_bottom_text_color" android:gravity="center" android:id="@id/textViewHintBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/migration_card_ready_hint_bottom_text" app:rocket_font="light" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/migration_hint_bottom_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/migration_card_ready_city_hint" />
+                <Spinner android:textColorHint="@color/migration_hint_bottom_text_color" android:id="@id/spinnerCity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:hint="@string/migration_card_ready_city_hint" android:prompt="@string/migration_card_ready_city_hint" style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/migration_hint_bottom_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="16.0dip">
+                    <ru.rocketbank.core.widgets.RocketEditText android:textSize="20.0sp" android:textColorHint="@color/migration_hint_bottom_text_color" android:id="@id/editTextAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/migration_card_ready_address_hint" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:foregroundGravity="bottom">
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/button" android:background="@drawable/migration_button_background" android:layout_width="fill_parent" android:layout_height="@dimen/migration_button_height" android:text="@string/migration_card_ready_button_text" app:rocket_font="medium" />
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/migration_bottom_button_text_color_selector" android:layout_gravity="bottom" android:id="@id/buttonBottom" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rocket_font="medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="@dimen/material_drawer_vertical_padding" android:layout_marginBottom="@dimen/material_drawer_vertical_padding">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:id="@+id/material_drawer_icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitCenter"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/material_drawer_item_primary_text" android:textColor="@color/drawer_item_primary_name_color" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/material_drawer_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:singleLine="true" android:layout_weight="1" android:lineSpacingExtra="10dp" app:rocket_font="7"/>
+            </LinearLayout>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/material_drawer_item_primary_description" android:textColor="@color/drawer_item_primary_description_color" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/material_drawer_description" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="-4dp" android:singleLine="false" android:layout_weight="1" app:rocket_font="7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/material_drawer_badge_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/material_drawer_badge" android:background="@drawable/ic_badge_background" android:layout_width="18dp" android:layout_height="18dp" android:lines="1" android:singleLine="true" app:rocket_font="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

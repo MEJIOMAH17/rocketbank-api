@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/toolbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:title="@string/open_deposit" android:elevation="2.0dip" app:layout_scrollFlags="enterAlways" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <android.support.design.widget.TabLayout android:id="@id/sliding_tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0dip" app:tabGravity="center" app:tabIndicatorColor="@color/orange_variant_2" app:tabMode="fixed" app:tabSelectedTextColor="@color/rocketBlack" app:tabTextColor="@color/gray_variant_1" style="@style/RocketTabLayout" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@id/deposit_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="1" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="2" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="3" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="4" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="5" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="6" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="7" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="8" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="9" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <FrameLayout android:id="@+id/reset_frame" android:layout_width="68dp" android:layout_height="67dp" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/reset_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/forgot_code" android:maxLines="1"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="68dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketNumpadButton android:layout_gravity="center_horizontal" app:number="0" style="@style/RocketNumpadButton"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/clear_frame" android:layout_width="68dp" android:layout_height="67dp" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/clear_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/clear" android:maxLines="1" android:elevation="4dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

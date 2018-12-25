@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/gray_disabled"/>
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="@color/orange_variant_5">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp"/>
+                    <solid android:color="@color/orange"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

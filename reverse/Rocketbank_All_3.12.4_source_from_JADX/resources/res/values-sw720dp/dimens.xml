@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="dimen_parallax_header_size">472dp</dimen>
+    <dimen name="flexible_space_image_height">472dp</dimen>
+    <dimen name="invite_friends_header">484dp</dimen>
+</resources>

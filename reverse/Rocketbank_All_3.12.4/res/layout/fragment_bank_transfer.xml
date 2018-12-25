@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_bank_transfer_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:paddingBottom="@dimen/transfer_to_bank_account_form_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="20.0sp" android:textColor="@color/rocketBlack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/remittance_title" />
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/remittance_first_step" />
+        <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_bik_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@id/editTextBik" android:tag="binding_2" android:hint="@string/transfers_bank_bik_placeholder" android:maxLength="9" android:inputType="number" bind:rocket_font="regular" style="@style/TransfersBankInputText" />
+        <include layout="@layout/bank_info" />
+        <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_number_caption" style="@style/TransfersBankInputCaption" />
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <ru.rocketbank.core.widgets.RocketEditText android:id="@id/corr_number" android:tag="binding_3" android:hint="@string/transfers_bank_receiver_number_placeholder" bind:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+            <ProgressBar android:layout_gravity="end|center" android:id="@id/cardNumberProgressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin" />
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/red_variant" android:gravity="right" android:id="@id/textViewKindError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="Ошибка" />
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="20.0sp" android:textColor="@color/rocketBlack" android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/remittance_title" />
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/subTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/remittance_second_step" />
+        <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_4" android:text="@string/transfers_card_number_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@id/editTextCardNumber" android:tag="binding_5" android:hint="@string/transfers_bank_receiver_card_number_placeholder" bind:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+        <include layout="@layout/budget_transfer" />
+        <include layout="@layout/individual_transfer" />
+        <include layout="@layout/corporate_transfer" />
+    </LinearLayout>
+</ScrollView>

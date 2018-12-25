@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/commonListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/friend_item" />
+            <ImageButton android:textSize="18.0sp" android:textColor="#ffa5a5a5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/buttonInvite" android:background="?selectableItemBackgroundBorderless" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/plusguys" android:scaleType="centerInside" android:text="+" android:singleLine="true" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/buttonInviteSMS" android:background="@color/red" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/sms" android:tint="@color/white" />
+            <ImageButton android:id="@id/buttonInviteEmail" android:background="@color/orange" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/email" android:tint="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

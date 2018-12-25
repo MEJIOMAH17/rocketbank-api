@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarStyle="insideOverlay" android:tag="layout/remittance_check_info_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start" android:text="@string/transfers_bank_receiver_target_caption" style="@style/TransfersBankInputCaption"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="end" android:tag="binding_2" android:layout_width="wrap_content" android:maxLength="210" style="@style/TransfersBankInputCaption"/>
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/edittext_transfers_bank_purpose" android:tag="binding_3" android:hint="@string/transfers_bank_receiver_target_hint" android:maxLength="210" android:inputType="textMultiLine" style="@style/TransfersBankInputText"/>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@+id/fields" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

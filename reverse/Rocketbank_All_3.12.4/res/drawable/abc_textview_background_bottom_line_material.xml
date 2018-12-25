@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item>
+            <layer-list>
+                <item android:drawable="@drawable/textview_bottom_gray_line" />
+            </layer-list>
+        </item>
+    </selector>
+</inset>

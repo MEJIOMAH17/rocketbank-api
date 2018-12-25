@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="17dp" android:paddingTop="12dp" android:paddingRight="17dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/rightBlock" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:animateLayoutChanges="true">
+            <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <android.support.v7.widget.SwitchCompat android:theme="@style/ColorSwitchStyle" android:id="@+id/switcher" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:showText="false"/>
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="#d6000000" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:layout_toLeftOf="@+id/rightBlock" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:rocket_font="7"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" android:animateLayoutChanges="true">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="#d6000000" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" app:rocket_font="7"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="#8a000000" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

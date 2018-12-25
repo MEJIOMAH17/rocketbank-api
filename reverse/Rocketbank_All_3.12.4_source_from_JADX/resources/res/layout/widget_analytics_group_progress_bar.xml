@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/analytics_group_progress_bar_avatar_wrapper" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentLeft="true">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="20dp" android:id="@+id/analytics_group_progress_bar_icon" android:layout_width="@dimen/widget_progress_bar_chart_bar_icon_height" android:layout_height="@dimen/widget_progress_bar_chart_bar_icon_height" android:layout_centerVertical="true" app:rocket_font="9"/>
+            <ru.rocketbank.core.widgets.ContactAvatarView android:id="@+id/avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="18dp" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/analytics_group_progress_bar_title" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@+id/analytics_group_progress_bar_amount" android:layout_toRightOf="@+id/analytics_group_progress_bar_avatar_wrapper"/>
+        <ImageView android:id="@+id/rightTriangle" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_triangle_right_black" android:layout_alignParentRight="true"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="18dp" android:ellipsize="end" android:gravity="center" android:id="@+id/analytics_group_progress_bar_amount" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@+id/rightTriangle"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/tabLayout" android:tag="layout/include_tab_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp" app:tabIndicatorColor="@color/orange" app:tabMode="1" app:tabSelectedTextColor="@color/black" app:tabTextColor="@color/black_84"/>

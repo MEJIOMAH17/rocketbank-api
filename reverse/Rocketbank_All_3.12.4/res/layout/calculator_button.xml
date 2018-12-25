@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rocketbank.core.widgets.RocketButton android:textSize="18.0sp" android:textColor="@color/rocketBlack" android:orientation="horizontal" android:background="?selectableItemBackgroundBorderless" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

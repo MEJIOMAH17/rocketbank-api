@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/gray_popup" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/international" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/bank_corr" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/bank_corr" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/bank_receiver" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/bank_name_receiver" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/bank_address" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/bank_address" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/swift" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/swift_input" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/russia" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/bank" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/bank_name" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/fragment_userfeed_refill_transfer_bic_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_bic" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/fragment_userfeed_refill_transfer_inn_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_inn" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/fragment_userfeed_refill_transfer_kpp_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_kpp" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/correspondent_account" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/correspondent_account" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+            <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+                <ru.rocketbank.core.widgets.RocketTextView android:text="@string/fragment_userfeed_refill_transfer_target_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_target" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+            <ru.rocketbank.core.widgets.RocketTextView android:text="@string/fragment_userfeed_refill_transfer_sender_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_sender" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+        </LinearLayout>
+        <LinearLayout style="@style/ActivityUserFeedRefillTransferSectionLayout">
+            <ru.rocketbank.core.widgets.RocketTextView android:text="@string/account_number_caption" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionCaption"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/fragment_refill_transfer_textview_account" app:rocket_font="0" style="@style/ActivityUserFeedRefillTransferSectionBody"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

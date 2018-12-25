@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rocketbank.core.widgets.SquareLayout android:tag="layout/item_calendar_0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" grid:layout_columnWeight="1.0" grid:layout_rowWeight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:grid="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:gravity="center" android:id="@id/text_day" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" grid:rocket_font="medium" />
+</ru.rocketbank.core.widgets.SquareLayout>

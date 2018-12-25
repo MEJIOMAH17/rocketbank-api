@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/rocketBlack" android:tag="layout/shop_selected_size_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.54" app:rocket_font="regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

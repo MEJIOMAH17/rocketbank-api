@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/merchant" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/iconZone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_centerVertical="true">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/merchantIcon" android:layout_width="40dp" android:layout_height="40dp"/>
+            <io.codetail.widget.RevealFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/okIcon" android:background="@drawable/round_ok" android:padding="8dp" android:visibility="invisible" android:layout_width="@dimen/rount_merchant_width_height" android:layout_height="@dimen/rount_merchant_width_height" android:src="@drawable/ic_checked_white"/>
+            </io.codetail.widget.RevealFrameLayout>
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="17dp" android:textColor="@color/rocketBlack" android:gravity="right" android:id="@+id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="32%" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:rocket_font="7"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="16dp" android:textColor="@color/rocketBlack70" android:id="@+id/merchantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="Some" android:layout_toLeftOf="@+id/percent" android:layout_toRightOf="@+id/iconZone" android:layout_centerVertical="true" app:rocket_font="7"/>
+    </RelativeLayout>
+</FrameLayout>

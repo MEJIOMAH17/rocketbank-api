@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_operation_modern_receipt_0" android:focusable="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/header" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="@dimen/dimen_parallax_header_size">
+        <TextureView android:id="@+id/video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/overlay" android:background="@color/black_15" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@+id/operationIcon" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="23dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="23dp"/>
+                <ru.rocketbank.core.widgets.SquareLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/sputnik" android:background="@drawable/feed_sputnik" android:visibility="gone" android:layout_width="30dp" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_sputnik"/>
+                </ru.rocketbank.core.widgets.SquareLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_toRightOf="@+id/icon_layout" android:layout_alignTop="@+id/icon_layout" android:layout_alignBottom="@+id/icon_layout" android:layout_centerVertical="true">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="17sp" android:textColor="@color/white" android:ellipsize="end" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:rocket_font="7"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/white" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="name" app:rocket_font="7"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="18dp" android:layout_above="@+id/icon_layout">
+                <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="55sp" android:textColor="@color/white" android:id="@+id/amount" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:transitionName="amount" app:rocket_font="0"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/rocket_money" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="7"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.Toolbar android:theme="@style/AppTheme_AppBarOverlay" android:id="@+id/toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="8dp" app:popupTheme="@style/AppTheme_PopupOverlay"/>
+        <View android:id="@+id/header_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <android.support.v7.widget.Toolbar android:theme="@style/AppTheme_LightAppBarOverlay" android:gravity="center_vertical" android:id="@+id/realToolbar" android:tag="binding_6" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="10dp" app:popupTheme="@style/AppTheme_PopupOverlay">
+        <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@+id/iconImage" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="10dp"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="17sp" android:textColor="@color/rocketBlack" android:layout_gravity="left" android:id="@+id/realToolbarTitle" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="7"/>
+    </android.support.v7.widget.Toolbar>
+    <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@+id/operation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

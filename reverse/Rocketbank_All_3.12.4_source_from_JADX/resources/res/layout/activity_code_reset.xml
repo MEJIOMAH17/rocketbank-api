@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <View android:background="@color/black_54" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/textview_code_input" android:paddingLeft="@dimen/material_padding" android:paddingRight="@dimen/material_padding" android:text="@string/activity_reset_code_remember" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BottomCodeInputTextView"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/textview_code_input" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content" android:paddingLeft="21dp" android:paddingRight="21dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@drawable/code_reset_logo"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="32sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/activity_reset_code_forgot" android:lineSpacingExtra="5dp" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="22sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/activity_reset_code_dontworry" android:lineSpacingExtra="5dp" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="30sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/activity_reset_code_behappy" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketButton android:id="@+id/button_call" android:layout_marginTop="25dp" android:text="@string/activity_reset_code_call" style="@style/RocketButton"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

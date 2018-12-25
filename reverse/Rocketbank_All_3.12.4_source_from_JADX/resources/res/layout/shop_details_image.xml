@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/shop_details_image_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/child" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/viewColor" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:layout_width="40dp" android:layout_height="40dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </FrameLayout>
+</FrameLayout>

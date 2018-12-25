@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/commonListItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="18.0sp" android:textColor="@color/rocketBlack" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:lines="1" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/charges_grey_color" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_below="@id/title" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="#ff595959" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/date" />
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle_right_black" android:layout_alignParentRight="true" />
+</RelativeLayout>

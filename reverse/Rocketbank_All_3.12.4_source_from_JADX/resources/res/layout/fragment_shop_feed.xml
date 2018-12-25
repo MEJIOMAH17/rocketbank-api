@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_shop_feed_0" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:titleTextColor="@color/rocketBlack" style="@style/TabLayoutStyle">
+            <ImageButton android:textColor="@color/orange" android:layout_gravity="right" android:id="@+id/cartButton" android:tag="binding_1" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/cart" android:tint="@color/orange" android:layout_alignParentRight="true"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="20sp" android:textColor="@color/orange" android:layout_gravity="right" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" app:rocket_font="1"/>
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+            <FrameLayout android:layout_gravity="center" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cat" android:alpha="0.2"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/rocketBlack33" android:gravity="center" android:layout_gravity="center_horizontal" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="16dp"/>
+                </LinearLayout>
+            </FrameLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_new_passport_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="6.0dip" app:layout_collapseMode="pin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:elevation="6.0dip">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/image_step_1" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:layout_gravity="center_vertical" android:id="@id/line1" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" app:layout_constraintEnd_toStartOf="@id/image_step_2" app:layout_constraintStart_toEndOf="@id/image_step_1" app:layout_constraintTop_toBottomOf="@id/image_step_2" app:layout_constraintTop_toTopOf="@id/image_step_2" app:layout_constraintVertical_bias="0.5" />
+            <android.support.v7.widget.AppCompatImageView android:id="@id/image_step_2" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/guideline3" app:layout_constraintStart_toStartOf="@id/guideline3" app:layout_constraintTop_toTopOf="parent" />
+            <View android:layout_gravity="center_vertical" android:id="@id/line2" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" app:layout_constraintEnd_toStartOf="@id/image_step_3" app:layout_constraintStart_toEndOf="@id/image_step_2" app:layout_constraintTop_toBottomOf="@id/image_step_2" app:layout_constraintTop_toTopOf="@id/image_step_2" app:layout_constraintVertical_bias="0.5" />
+            <android.support.v7.widget.AppCompatImageView android:id="@id/image_step_3" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/toolbarShadow" android:background="@drawable/toolbar_dropshadow" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

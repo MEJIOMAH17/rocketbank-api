@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:titleTextColor="@color/rocketBlack" style="@style/TabLayoutStyle">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@+id/userfeed_transfers_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

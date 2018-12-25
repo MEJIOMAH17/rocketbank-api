@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialTheme.ActionBar.TranslucentStatus" parent="@style/MaterialTheme.ActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MaterialTheme.Light.ActionBar.TranslucentStatus" parent="@style/MaterialTheme.Light.ActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MaterialTheme.Light.DarkToolbar.ActionBar.TranslucentStatus" parent="@style/MaterialTheme.Light.DarkToolbar.ActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MaterialTheme.Light.DarkToolbar.TranslucentStatus" parent="@style/MaterialTheme.Light.DarkToolbar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MaterialTheme.Light.TranslucentStatus" parent="@style/MaterialTheme.Light">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="MaterialTheme.TranslucentStatus" parent="@style/MaterialTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Theme.Base.19" parent="@style/Theme.Base.14">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>

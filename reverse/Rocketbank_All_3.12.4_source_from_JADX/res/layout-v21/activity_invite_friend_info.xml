@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout android:tag="layout/activity_invite_friend_info_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/fullscreen_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="20.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ground_rocketrubbles_splash" android:scaleType="fitXY" />
+        <ScrollView android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="23.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rocket" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invite_your_friends" android:lineSpacingMultiplier="1.2" app:rocket_font="medium" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/your_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/send_your_url" android:layout_below="@id/rocket" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.5" app:rocket_font="regular" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/url" android:tag="binding_1" android:background="@drawable/white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/your_url" android:layout_centerHorizontal="true" app:rocket_font="regular" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/social" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/url" android:layout_centerHorizontal="true">
+                    <ImageButton android:id="@id/facebook" android:tag="binding_2" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/face" style="?android:borderlessButtonStyle" />
+                    <ImageButton android:id="@id/vk" android:tag="binding_3" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/vk" style="?android:borderlessButtonStyle" />
+                    <ImageButton android:id="@id/twitter" android:tag="binding_4" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/twit" style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/textPayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/social" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.5" app:rocket_font="regular" />
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="14.0sp" android:textColor="@color/rocketBlack" android:id="@id/closeButton" android:tag="binding_5" android:layout_width="119.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="ЗАКРЫТЬ" android:layout_below="@id/textPayment" android:layout_centerHorizontal="true" app:rocket_font="medium" style="@style/Button.White" />
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</io.codetail.widget.RevealFrameLayout>

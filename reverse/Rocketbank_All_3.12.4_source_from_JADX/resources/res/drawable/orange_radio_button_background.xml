@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:enterFadeDuration="500" android:exitFadeDuration="500">
+    <item android:state_enabled="false">
+        <shape android:shape="oval" android:useLevel="false" android:innerRadius="@dimen/radio_button_inner_radius_size" android:thickness="0dp">
+            <stroke android:width="@dimen/radio_button_stroke_width" android:color="@color/orange_20"/>
+            <solid android:color="#32e8e8e8"/>
+            <size android:height="@dimen/radio_button_size" android:width="@dimen/radio_button_size"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="oval" android:useLevel="false" android:innerRadius="@dimen/radio_button_inner_radius_size" android:thickness="0dp">
+            <solid android:color="@color/orange"/>
+            <stroke android:width="@dimen/radio_button_stroke_width" android:color="@color/orange"/>
+            <size android:height="@dimen/radio_button_size" android:width="@dimen/radio_button_size"/>
+        </shape>
+    </item>
+    <item android:state_hovered="true">
+        <shape android:shape="oval" android:useLevel="false" android:innerRadius="@dimen/radio_button_inner_radius_size" android:thickness="0dp">
+            <solid android:color="@color/orange"/>
+            <stroke android:width="@dimen/radio_button_stroke_width" android:color="@color/orange"/>
+            <size android:height="@dimen/radio_button_size" android:width="@dimen/radio_button_size"/>
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="oval" android:useLevel="false" android:innerRadius="@dimen/radio_button_inner_radius_size" android:thickness="0dp">
+            <stroke android:width="@dimen/radio_button_stroke_width" android:color="@color/orange"/>
+            <size android:height="@dimen/radio_button_size" android:width="@dimen/radio_button_size"/>
+        </shape>
+    </item>
+</selector>

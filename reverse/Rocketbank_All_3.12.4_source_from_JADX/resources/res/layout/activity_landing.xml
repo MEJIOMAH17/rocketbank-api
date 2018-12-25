@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:src="@drawable/logo_head"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="32sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:text="Современный банк
+для людей" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/white" android:id="@+id/startButton" android:background="@drawable/rocketbutton_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Начать" android:onClick="onStartClick" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/white" android:id="@+id/showMapButton" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Карта банкоматов" android:onClick="onAtmsClick" app:rocket_font="0"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

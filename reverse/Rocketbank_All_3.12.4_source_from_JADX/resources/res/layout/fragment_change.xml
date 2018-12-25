@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_change_0" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarInclude" layout="@layout/layout_toolbar_with_button"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:textColor="@color/rocketBlack" android:gravity="center" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketPinEntryView android:textStyle="bold" android:textColor="@color/rocketBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/editText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" app:digitBackground="@drawable/pin_box_background" app:numDigits="4"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/text_red" android:gravity="center" android:id="@+id/textViewErrors" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/operation_background_gray" android:id="@+id/textViewDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" app:rocket_font="0"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

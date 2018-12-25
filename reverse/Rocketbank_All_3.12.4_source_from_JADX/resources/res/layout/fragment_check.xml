@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_check_0" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarInclude" layout="@layout/layout_toolbar_with_button"/>
+    <ScrollView android:layout_gravity="fill_vertical" android:id="@+id/nestedScrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/black_87" android:gravity="center" android:id="@+id/textViewInputCardDigitsHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:rocket_font="0"/>
+            <ru.rocketbank.core.widgets.CreditCardView android:id="@+id/creditCard" app:cardCornerRadius="@dimen/credit_card_round" app:cardElevation="@dimen/card_elevation" app:cvv_is_visible="false" app:show_name="true" style="@style/credit_card_style"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/refill_camera_margin_top" android:layout_marginBottom="@dimen/refill_camera_margin_top">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/gray_bc" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/rocketTextView" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add" android:drawableLeft="@drawable/ic_nfcicon" android:drawablePadding="8dp"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:tag="binding_2" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/orange" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/cardPhoto" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/take_a_photo" android:drawableLeft="@drawable/ic_support_camera" android:drawablePadding="8dp"/>
+            </LinearLayout>
+            <Button android:enabled="false" android:id="@+id/newNext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Далее" style="@style/RocketButton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

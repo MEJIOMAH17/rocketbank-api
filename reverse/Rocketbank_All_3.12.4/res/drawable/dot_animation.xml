@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="25" android:drawable="@drawable/typing_000" />
+    <item android:duration="25" android:drawable="@drawable/typing_001" />
+    <item android:duration="25" android:drawable="@drawable/typing_002" />
+    <item android:duration="25" android:drawable="@drawable/typing_003" />
+    <item android:duration="25" android:drawable="@drawable/typing_004" />
+    <item android:duration="25" android:drawable="@drawable/typing_005" />
+    <item android:duration="25" android:drawable="@drawable/typing_006" />
+    <item android:duration="25" android:drawable="@drawable/typing_007" />
+    <item android:duration="25" android:drawable="@drawable/typing_008" />
+    <item android:duration="25" android:drawable="@drawable/typing_009" />
+    <item android:duration="25" android:drawable="@drawable/typing_010" />
+    <item android:duration="25" android:drawable="@drawable/typing_011" />
+    <item android:duration="25" android:drawable="@drawable/typing_012" />
+    <item android:duration="25" android:drawable="@drawable/typing_013" />
+    <item android:duration="25" android:drawable="@drawable/typing_014" />
+    <item android:duration="25" android:drawable="@drawable/typing_015" />
+    <item android:duration="25" android:drawable="@drawable/typing_016" />
+    <item android:duration="25" android:drawable="@drawable/typing_017" />
+    <item android:duration="25" android:drawable="@drawable/typing_018" />
+    <item android:duration="25" android:drawable="@drawable/typing_019" />
+    <item android:duration="25" android:drawable="@drawable/typing_020" />
+    <item android:duration="25" android:drawable="@drawable/typing_021" />
+    <item android:duration="25" android:drawable="@drawable/typing_022" />
+    <item android:duration="25" android:drawable="@drawable/typing_023" />
+    <item android:duration="25" android:drawable="@drawable/typing_024" />
+    <item android:duration="25" android:drawable="@drawable/typing_025" />
+    <item android:duration="25" android:drawable="@drawable/typing_026" />
+    <item android:duration="25" android:drawable="@drawable/typing_027" />
+    <item android:duration="25" android:drawable="@drawable/typing_028" />
+    <item android:duration="25" android:drawable="@drawable/typing_029" />
+    <item android:duration="25" android:drawable="@drawable/typing_030" />
+    <item android:duration="25" android:drawable="@drawable/typing_031" />
+    <item android:duration="25" android:drawable="@drawable/typing_032" />
+    <item android:duration="25" android:drawable="@drawable/typing_033" />
+    <item android:duration="25" android:drawable="@drawable/typing_034" />
+    <item android:duration="25" android:drawable="@drawable/typing_035" />
+    <item android:duration="25" android:drawable="@drawable/typing_036" />
+    <item android:duration="25" android:drawable="@drawable/typing_037" />
+    <item android:duration="25" android:drawable="@drawable/typing_038" />
+    <item android:duration="25" android:drawable="@drawable/typing_039" />
+    <item android:duration="25" android:drawable="@drawable/typing_040" />
+    <item android:duration="25" android:drawable="@drawable/typing_041" />
+    <item android:duration="25" android:drawable="@drawable/typing_042" />
+    <item android:duration="25" android:drawable="@drawable/typing_043" />
+    <item android:duration="25" android:drawable="@drawable/typing_044" />
+    <item android:duration="25" android:drawable="@drawable/typing_045" />
+    <item android:duration="25" android:drawable="@drawable/typing_046" />
+    <item android:duration="25" android:drawable="@drawable/typing_047" />
+    <item android:duration="25" android:drawable="@drawable/typing_048" />
+    <item android:duration="25" android:drawable="@drawable/typing_049" />
+</animation-list>

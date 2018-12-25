@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/include_toolbar"/>
+    <LinearLayout android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketButton android:textSize="20sp" android:id="@+id/paymentsButton" android:layout_width="64dp" android:layout_height="64dp" android:text="" app:rocket_font="4"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Платежи" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketButton android:textSize="20sp" android:id="@+id/cardButton" android:layout_width="64dp" android:layout_height="64dp" android:text="" app:rocket_font="4"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="На карту" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketButton android:textSize="20sp" android:id="@+id/fizFaceButton" android:layout_width="64dp" android:layout_height="64dp" android:text="" app:rocket_font="4"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Физ. лицу" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ru.rocketbank.core.widgets.RocketButton android:textSize="20sp" android:id="@+id/yrFaceButton" android:layout_width="64dp" android:layout_height="64dp" android:text="" app:rocket_font="4"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Юр. лицу" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="16dp" android:text="Шаблоны"/>
+</LinearLayout>

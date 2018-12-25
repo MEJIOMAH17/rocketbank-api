@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/payment_details_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:titleTextColor="@color/rocketBlack">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_details_fragment_margin" android:layout_marginBottom="@dimen/payment_details_fragment_margin">
+                <include layout="@layout/item_provider"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/viewFields" android:paddingLeft="@dimen/payment_details_fragment_margin" android:paddingRight="@dimen/payment_details_fragment_margin" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@+id/toolbarShadow" android:background="@drawable/toolbar_dropshadow" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </FrameLayout>
+</LinearLayout>

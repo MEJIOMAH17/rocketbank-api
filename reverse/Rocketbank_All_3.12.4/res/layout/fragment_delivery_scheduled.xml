@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/fragment_delivery_scheduled_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:map="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.maps.MapView android:id="@id/map_view" android:layout_width="fill_parent" android:layout_height="fill_parent" map:cameraZoom="17.0" map:liteMode="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="50.0dip" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/marker_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pin_categories" android:tint="@color/rocketBlack" />
+            <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/user_pic" android:padding="3.0dip" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@color/gray" />
+        </FrameLayout>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/black_universal" android:gravity="center" android:id="@id/text" android:tag="binding_1" android:background="@drawable/bubble_map_1" android:paddingLeft="20.0dip" android:paddingTop="24.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="12.0dip" />
+    </LinearLayout>
+</FrameLayout>

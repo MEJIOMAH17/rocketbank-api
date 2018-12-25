@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/title" android:text="@string/transfers_bank_bik_caption" android:textIsSelectable="true" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/value" android:inputType="textMultiLine" android:textIsSelectable="true" style="@style/TransfersBankInputText" />
+</LinearLayout>

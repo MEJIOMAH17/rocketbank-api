@@ -1,0 +1,33 @@
+package kotlin.text;
+
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReference;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KDeclarationContainer;
+
+/* compiled from: Regex.kt */
+final class Regex$findAll$2 extends FunctionReference implements Function1<MatchResult, MatchResult> {
+    public static final Regex$findAll$2 INSTANCE = new Regex$findAll$2();
+
+    Regex$findAll$2() {
+        super(1);
+    }
+
+    public final String getName() {
+        return "next";
+    }
+
+    public final KDeclarationContainer getOwner() {
+        return Reflection.getOrCreateKotlinClass$4641416c(MatchResult.class);
+    }
+
+    public final String getSignature() {
+        return "next()Lkotlin/text/MatchResult;";
+    }
+
+    public final MatchResult invoke(MatchResult matchResult) {
+        Intrinsics.checkParameterIsNotNull(matchResult, "p1");
+        return matchResult.next();
+    }
+}

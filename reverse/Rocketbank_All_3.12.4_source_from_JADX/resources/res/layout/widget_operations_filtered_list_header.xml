@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ru.rocketbank.core.widgets.SquareLayout android:id="@+id/square_layout" android:background="#e37800" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:paddingLeft="72dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="48sp" android:id="@+id/total" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="всего" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="7 дней" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:gravity="right" android:id="@+id/week" android:layout_width="0dp" android:layout_height="wrap_content" android:text="100 рублей" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="30 дней" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:gravity="right" android:id="@+id/fourWeeks" android:layout_width="0dp" android:layout_height="wrap_content" android:text="100 рублей" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:id="@+id/this_month_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="этот месяц" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:gravity="right" android:id="@+id/thisMonth" android:layout_width="0dp" android:layout_height="wrap_content" android:text="100 рублей" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        </LinearLayout>
+        <LinearLayout android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:id="@+id/last_month_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="прошлый месяц" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="18sp" android:gravity="right" android:id="@+id/lastMonth" android:layout_width="0dp" android:layout_height="wrap_content" android:text="100 рублей" android:layout_weight="1" app:rocket_font="0" style="@style/OperationFilteredListHeaderWidgetTextBase"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

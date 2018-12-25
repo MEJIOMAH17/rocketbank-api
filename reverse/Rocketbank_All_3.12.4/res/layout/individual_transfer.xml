@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/individualView" android:tag="layout/individual_transfer_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/editTextIndividualRecipientName" android:tag="binding_1" android:hint="@string/transfers_bank_receiver_fiz_placeholder" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_2" android:text="@string/material_assist_type_title" style="@style/TransfersBankInputCaption" />
+    <Spinner android:id="@id/materialAssistTypeSpinner" android:tag="binding_3" android:background="@drawable/underline_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownWidth="300.0dip" style="@style/TransfersBankInputCaption" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start" android:text="@string/transfers_bank_receiver_target_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="end" android:tag="binding_4" android:layout_width="wrap_content" style="@style/TransfersBankInputCaption" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/editTextIndividualPurpose" android:tag="binding_5" android:hint="@string/transfers_bank_receiver_target_hint" android:maxLength="210" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+</LinearLayout>

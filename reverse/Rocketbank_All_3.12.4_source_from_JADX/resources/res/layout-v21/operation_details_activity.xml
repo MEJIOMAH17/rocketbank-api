@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="@dimen/dimen_parallax_header_size">
+        <FrameLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="@dimen/dimen_parallax_header_size">
+            <TextureView android:id="@+id/headerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@+id/operationIcon" android:layout_width="@dimen/operation_logo_size" android:layout_height="@dimen/operation_logo_size" android:layout_marginLeft="23dp" android:layout_marginBottom="23dp" android:layout_alignParentBottom="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/operation_logo_size" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/operationIcon" android:layout_alignBottom="@+id/operationIcon">
+                    <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="7"/>
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="name" app:rocket_font="7"/>
+                </LinearLayout>
+                <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="55sp" android:textColor="@color/white" android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginBottom="18dp" android:layout_above="@+id/operationIcon" android:transitionName="amount" app:rocket_font="0"/>
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar android:theme="@style/AppTheme_AppBarOverlay" android:id="@+id/toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="8dp" app:popupTheme="@style/AppTheme_PopupOverlay"/>
+        </FrameLayout>
+        <View android:id="@+id/header_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View android:id="@+id/card_overlay" android:background="@color/white_smoke" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@+id/operation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v7.widget.Toolbar android:theme="@style/AppTheme_LightAppBarOverlay" android:id="@+id/toolbarReal" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="10dp" app:layout_behavior="ru.rocketbank.r2d2.widgets.behavior.RealToolbarSwipeBehavior" app:popupTheme="@style/AppTheme_PopupOverlay">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/rocketBlack" android:layout_gravity="left" android:id="@+id/real_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rocket_font="1"/>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

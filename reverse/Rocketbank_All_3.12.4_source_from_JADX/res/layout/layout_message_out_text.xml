@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_message_out_text_0" android:paddingLeft="13.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:id="@id/messageBody" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip">
+            <FrameLayout android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/white" android:textColorLink="@color/white" android:autoLink="web" android:tag="binding_3" android:padding="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" app:rocket_font="regular" />
+            </FrameLayout>
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@id/retry" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/retry_cap" />
+        </LinearLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:layout_gravity="right" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" />
+</LinearLayout>

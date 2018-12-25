@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:tag="layout/feed_item_month_cashback_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/feed_item_head"/>
+    <android.support.v7.widget.CardView android:id="@+id/cardBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" app:cardCornerRadius="2dp" app:cardElevation="1dp" app:cardPreventCornerOverlap="false">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/headerText" android:background="@color/orange_variant_2" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/month_most_loved_time_to_choose" app:rocket_font="7"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/selectionStatus" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/left_to_choose"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/merchantContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/rocketBlack30" android:layout_gravity="right" android:id="@+id/confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/confirm" app:rocket_font="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

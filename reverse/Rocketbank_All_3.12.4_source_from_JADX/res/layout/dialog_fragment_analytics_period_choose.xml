@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingLeft="48.0dip" android:paddingTop="32.0dip" android:paddingRight="48.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@id/wheelView" layout="@layout/two_wheel_view" />
+    </FrameLayout>
+    <LinearLayout android:textColor="@color/orange" android:gravity="end" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/md_grey_500" android:id="@id/buttonCancel" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_cap" app:rocket_font="medium" />
+        <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/orange" android:id="@id/buttonOk" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" app:rocket_font="medium" />
+    </LinearLayout>
+</LinearLayout>

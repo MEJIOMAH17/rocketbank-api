@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/migration_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_top_text_size" android:textColor="@color/migration_hint_top_text_color" android:gravity="center" android:id="@+id/textViewHintTop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/registration_hint_top_text" app:rocket_font="0"/>
+                <ru.rocketbank.core.widgets.RocketTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/editTextEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email_hint" android:inputType="textEmailAddress"/>
+                </ru.rocketbank.core.widgets.RocketTextInputLayout>
+                <ru.rocketbank.core.widgets.RocketTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <ru.rocketbank.core.widgets.RocketEditText android:id="@+id/editTextSecretWord" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/secret_word_hint" android:inputType="text"/>
+                </ru.rocketbank.core.widgets.RocketTextInputLayout>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/migration_hint_bottom_text_size" android:textColor="@color/migration_hint_bottom_text_color" android:gravity="center" android:id="@+id/textViewHintBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/registration_secret_word_hint_bottom_text" app:rocket_font="0"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/migration_hint_bottom_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="16dp">
+                    <ru.rocketbank.core.widgets.RocketEditText android:textSize="20sp" android:textColorHint="@color/migration_hint_bottom_text_color" android:id="@+id/editTextName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/card_holder_name_hint" android:inputType="textCapCharacters"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:foregroundGravity="bottom">
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/button" android:background="@drawable/orange_button_background" android:layout_width="match_parent" android:layout_height="@dimen/migration_button_height" android:text="@string/registration_fill_form_button_text" app:rocket_font="1"/>
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/registration_bottom_button_text_color_selector" android:layout_gravity="bottom" android:id="@+id/buttonBottom" android:background="@color/transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="280.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_round_frame" android:padding="20.599976dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.299988dip">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="18.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.699982dip" app:rocket_font="medium" />
+        <RatingBar android:layout_gravity="center_horizontal" android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="20.599976dip" android:progressDrawable="@drawable/progress_rating" android:numStars="5" android:rating="5.0" android:stepSize="1.0" />
+        <ru.rocketbank.core.widgets.RocketTextInputLayout android:textColorHint="@color/gray_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:text="@string/comment_rating_cap">
+            <ru.rocketbank.core.widgets.RocketEditText android:id="@id/comment" android:background="@drawable/underline_orange" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/comment_rating_cap" />
+        </ru.rocketbank.core.widgets.RocketTextInputLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="46.599976dip">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/gray_3" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_cap" app:rocket_font="regular" />
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="@color/orange" android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:text="@string/ra_action_send" app:rocket_font="regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image" android:layout_width="@dimen/dialog_avatar_size" android:layout_height="@dimen/dialog_avatar_size" />
+</FrameLayout>

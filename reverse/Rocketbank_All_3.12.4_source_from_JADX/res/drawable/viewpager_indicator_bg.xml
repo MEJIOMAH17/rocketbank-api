@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/viewpager_indicator_container" />
+    <item>
+        <bitmap android:gravity="bottom|center" android:src="@drawable/analytics_tab_drawable" />
+    </item>
+</layer-list>

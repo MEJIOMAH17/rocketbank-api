@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/activity_discount_details_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView android:id="@id/observableScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.SquareLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/square_img_description" />
+            </ru.rocketbank.core.widgets.SquareLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/material_padding" android:layout_marginTop="@dimen/material_padding" android:layout_marginRight="@dimen/material_padding">
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0sp" android:textColor="@color/black_universal" android:id="@id/promo_title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:id="@id/how_get" android:paddingTop="@dimen/material_padding" android:paddingBottom="@dimen/material_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promo_description" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:id="@id/promo_description" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/promo_layout" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/promo_title_copy" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" />
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="20.649994sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/promo_code_text" android:tag="binding_5" android:background="@drawable/rounded_corners_orange" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/material_padding" android:minWidth="191.0dip" android:minHeight="45.0dip" app:rocket_font="light" />
+                </LinearLayout>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="20.0sp" android:textColor="@android:color/holo_blue_light" android:gravity="center" android:id="@id/promocodeText" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="61.0dip" android:layout_marginBottom="26.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <include android:id="@id/include" layout="@layout/include_toolbar" />
+</FrameLayout>

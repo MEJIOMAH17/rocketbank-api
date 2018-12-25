@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout android:id="@id/reveal_root" android:tag="layout/activity_pdf_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.barteksc.pdfviewer.PDFView android:id="@id/pdf_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

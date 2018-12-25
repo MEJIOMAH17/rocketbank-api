@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/budgetView" android:tag="layout/budget_transfer_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rocket="http://schemas.android.com/apk/res-auto">
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_inn_caption" style="@style/TransfersBankInputCaption" />
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@id/inn" android:tag="binding_1" android:hint="@string/transfers_bank_receiver_inn_placeholder" android:maxLength="10" android:inputType="number" style="@style/TransfersBankInputText" />
+        <ProgressBar android:layout_gravity="end|center" android:id="@id/innProgressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_budget_receiver_kpp_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/kpp" android:tag="binding_2" android:hint="@string/transfers_bank_receiver_kpp_placeholder" android:maxLines="1" rocket:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/recipient_name" android:tag="binding_3" android:hint="@string/transfers_budget_receiver_placeholder" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start|center" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/transfers_bank_receiver_kbk_caption" style="@style/TransfersBankInputCaption" />
+        <ImageButton android:layout_gravity="end|center" android:id="@id/buttonInfoKbk" android:background="@color/transparent" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_info_black" android:scaleType="fitCenter" android:tint="#ff333333" android:alpha="0.24" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/kbk" android:tag="binding_4" android:hint="@string/transfers_bank_receiver_kbk_placeholder" android:maxLength="26" rocket:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_oktmo_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/oktmo" android:tag="binding_5" android:hint="@string/transfers_bank_receiver_oktmo_placeholder" android:maxLength="10" rocket:rawInputType="KEYBOARD_12KEY" style="@style/TransfersBankInputText" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start|center" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/transfers_bank_receiver_uin_caption" style="@style/TransfersBankInputCaption" />
+        <ImageButton android:layout_gravity="end|center" android:id="@id/buttonInfoUin" android:background="@color/transparent" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/transfer_to_bank_account_form_margin" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_info_black" android:scaleType="fitCenter" android:tint="#ff333333" android:alpha="0.24" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/uin" android:tag="binding_6" android:hint="@string/transfers_bank_receiver_uin_placeholder" android:maxLength="25" android:inputType="number" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_bank_receiver_from_caption" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/from" android:tag="binding_7" android:hint="@string/transfers_bank_receiver_from_placeholder" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:id="@id/innFromText" android:tag="binding_8" style="@style/TransfersBankInputCaption" />
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/innFrom" android:tag="binding_9" android:hint="@string/transfers_bank_pay_inn_from_placeholder" android:maxLength="12" android:inputType="number" style="@style/TransfersBankInputText" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="start" android:text="@string/transfers_bank_receiver_target_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketTextView android:layout_gravity="end" android:tag="binding_10" android:layout_width="wrap_content" style="@style/TransfersBankInputCaption" />
+    </FrameLayout>
+    <ru.rocketbank.core.widgets.RocketEditText android:id="@id/edittext_transfers_bank_purpose" android:tag="binding_11" android:hint="@string/transfers_bank_receiver_target_hint" android:maxLength="210" android:inputType="textMultiLine" style="@style/TransfersBankInputText" />
+    <ru.rocketbank.core.widgets.RocketTextView android:text="@string/transfers_budget_status" style="@style/TransfersBankInputCaption" />
+    <Spinner android:id="@id/spinnerStatus" android:background="@drawable/underline_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownWidth="300.0dip" style="@style/TransfersBankInputCaption" />
+    <android.support.v7.widget.CardView android:id="@id/tax_switch" android:tag="binding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/transfer_to_bank_account_form_margin">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0sp" android:textColor="#d6000000" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/this_is_tax" android:layout_toLeftOf="@id/switcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" rocket:rocket_font="regular" />
+            <android.support.v7.widget.SwitchCompat android:theme="@style/ColorSwitchStyle" android:id="@id/switcher" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" rocket:showText="false" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:id="@id/tax_fields" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_14" android:text="@string/transfers_bank_receiver_tax_basis_caption" style="@style/TransfersBankInputCaption" />
+        <Spinner android:id="@id/taxBasis" android:tag="binding_15" android:background="@drawable/underline_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownWidth="300.0dip" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_16" android:text="@string/transfers_bank_receiver_inn_from_mandatory_caption" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketEditText android:id="@id/innFromTax" android:tag="binding_17" android:hint="@string/transfers_bank_pay_inn_from_placeholder" android:maxLength="12" android:inputType="number" style="@style/TransfersBankInputText" />
+        <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_18" style="@style/TransfersBankInputCaption" />
+        <ru.rocketbank.core.widgets.RocketEditText android:textColor="@color/rocketBlack" android:id="@id/taxPeriod" android:tag="binding_19" android:maxLines="1" style="@style/TransfersBankInputText" />
+    </LinearLayout>
+</LinearLayout>

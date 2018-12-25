@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_operation_header_size">
+        <VideoView android:id="@id/headerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/header_overlay" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@id/operationIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/operation_logo_size" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/iconZone" android:layout_alignBottom="@id/iconZone">
+                <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rocket_font="regular" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rocket_font="regular" />
+            </LinearLayout>
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="55.0dip" android:textColor="@color/white" android:id="@id/amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginBottom="18.0dip" android:layout_above="@id/iconZone" app:rocket_font="light" />
+        </RelativeLayout>
+        <android.support.v7.widget.Toolbar android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </FrameLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@id/operation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

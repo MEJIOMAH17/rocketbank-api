@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:titleTextColor="@color/rocketBlack">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <ru.rocketbank.r2d2.registration.fragment.ProgressRegistrationView android:gravity="center" android:id="@+id/registrationProgressView" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/repeat_button" android:paddingLeft="@dimen/material_padding" android:paddingRight="@dimen/material_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repeat"/>
+        <View android:id="@+id/toolbarShadow" android:background="@drawable/toolbar_dropshadow" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </FrameLayout>
+</LinearLayout>

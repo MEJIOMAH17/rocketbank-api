@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/analytics_item_header_0" android:layout_width="match_parent" android:layout_height="100dp">
+    <ImageButton android:tag="binding_1" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="16dp" android:layout_marginRight="50dp" android:layout_marginBottom="16dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="@color/rocketBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewPeriodName" android:tag="binding_2" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="wrap_content" app:rocket_font="7"/>
+        <FrameLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="@dimen/widget_big_chart_percentage_font_size" android:textColor="@color/rocketBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewHeader" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="40dp" app:rocket_font="7"/>
+            <ProgressBar android:layout_gravity="center" android:tag="binding_4" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="true"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageButton android:tag="binding_5" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/layout_statistics_total_item_0" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14.0sp" android:textColor="#de959595" android:id="@id/rocketrouble" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:rocket_font="regular" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="#d6000000" android:id="@id/amount" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rocketrouble" app:rocket_font="medium" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0sp" android:textColor="#d6000000" android:id="@id/forMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/for_all_time" android:layout_alignParentLeft="true" app:rocket_font="medium" />
+</RelativeLayout>

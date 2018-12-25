@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_reference_pdf_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketLoader android:layout_gravity="center" android:id="@+id/loader" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/gray" android:layout_gravity="center" android:id="@+id/status_text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="25dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/button_close" android:tag="binding_3" android:background="@drawable/rounded_corners_orange" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/close" app:rocket_font="6"/>
+        </android.support.v7.widget.CardView>
+        <ru.rocketbank.core.widgets.RocketTextView android:textColor="#d1d0d0" android:gravity="center" android:id="@+id/button_try_agan" android:tag="binding_4" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/retry_cap" app:rocket_font="6"/>
+    </LinearLayout>
+</FrameLayout>

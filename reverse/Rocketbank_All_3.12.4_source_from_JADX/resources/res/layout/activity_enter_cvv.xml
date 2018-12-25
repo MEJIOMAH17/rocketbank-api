@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_enter_cvv_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbarBlock" layout="@layout/layout_toolbar_with_button"/>
+    <android.support.v4.widget.NestedScrollView android:scrollbarStyle="insideOverlay" android:id="@+id/scroll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ru.rocketbank.core.widgets.CreditCardView android:layout_gravity="center_horizontal" android:id="@+id/creditCard" app:cardCornerRadius="@dimen/credit_card_round" app:cardElevation="@dimen/card_elevation" app:expiration_is_visible="false" app:mode="oneLine" app:pan_editable="false" app:show_new_card="false" style="@style/credit_card_style"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

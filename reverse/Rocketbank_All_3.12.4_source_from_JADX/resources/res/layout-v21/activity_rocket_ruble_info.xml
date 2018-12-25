@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_rocket_ruble_info_0" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="20dp">
+    <FrameLayout android:id="@+id/fullscreen_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ground_rocketrubbles_splash" android:scaleType="fitXY"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <android.support.constraint.ConstraintLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:indeterminate="true" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toTopOf="@+id/closeButton" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <include android:visibility="gone" layout="@layout/info_onetwotrip"/>
+                <include layout="@layout/info_rocketrubles"/>
+                <android.support.v7.widget.CardView android:textColor="@color/white" android:id="@+id/closeButton" android:layout_width="118dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="60dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+                    <ru.rocketbank.core.widgets.RocketTextView android:textSize="13sp" android:textColor="@color/black" android:gravity="center" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/close_cap" app:rocket_font="1"/>
+                </android.support.v7.widget.CardView>
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

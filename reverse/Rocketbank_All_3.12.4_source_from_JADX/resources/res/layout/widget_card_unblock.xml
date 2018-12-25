@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/rocketBlack" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <Button android:id="@+id/widget_card_unblock_offset_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/support_text" android:layout_alignParentBottom="true"/>
+        <ru.rocketbank.core.widgets.RocketTextView android:textSize="30dp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/widget_card_unblock_textview_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp" android:text="@string/widget_card_unblock_card_blocked" android:layout_alignParentTop="true"/>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@+id/button_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/widget_card_unblock_offset_layout" android:layout_below="@+id/widget_card_unblock_textview_title">
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="15dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/help_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="24dp" android:layout_marginRight="32dp" android:text="@string/locked_new_passport_need" app:rocket_font="1"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/widget_card_block_lock_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="16dp" android:src="@drawable/widget_card_block_lock_button" android:scaleType="center"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:textSize="16dp" android:textColor="#959494" android:gravity="center_horizontal" android:id="@+id/widget_card_unblock_textview_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginRight="48dp" android:layout_marginBottom="8dp" android:text="@string/unlock_button_help" app:rocket_font="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

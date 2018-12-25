@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.design.widget.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="50dp" app:tabTextAppearance="@style/TabDatePeriodDialog" style="@style/TabLayoutDatePeriodDialog"/>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <LinearLayout android:textColor="@color/orange" android:gravity="end" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/md_grey_500" android:id="@+id/buttonCancel" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_cap" app:rocket_font="1"/>
+        <ru.rocketbank.core.widgets.RocketButton android:textColor="@color/orange" android:id="@+id/buttonOk" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" app:rocket_font="1"/>
+    </LinearLayout>
+</LinearLayout>

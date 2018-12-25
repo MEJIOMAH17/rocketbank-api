@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_delivery_time_interval_0" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/is_checked" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_checked_white" android:tint="@color/orange_variant_2" android:layout_alignParentRight="true" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="16.0sp" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/is_checked" android:layout_alignParentLeft="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_fine_charge" android:tag="layout/activity_penalty_charge_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:tag="binding_1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="6dp" app:titleTextColor="@color/rocketBlack">
+        <include layout="@layout/next_button"/>
+    </android.support.v7.widget.Toolbar>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="14sp" android:textColor="#8c000000" android:gravity="center_vertical" android:id="@+id/textView" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="47dp" android:text="@string/penalty_information"/>
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="1dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+            <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_2" style="@style/ChargeTextViewValue"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:text="@string/penalty_date" style="@style/ChargeTextViewLabel"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_3" style="@style/ChargeTextViewValue"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:text="@string/penalty_number" style="@style/ChargeTextViewLabel"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:tag="binding_4" style="@style/ChargeTextViewLabel"/>
+            <ru.rocketbank.core.widgets.RocketTextView android:id="@+id/textViewFineSum" android:text="@string/penalty_sum" style="@style/ChargeTextViewValue"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="13dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon" android:layout_width="@dimen/dimen_icon_size" android:layout_height="@dimen/dimen_icon_size"/>
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="12sp" android:textColor="#bcbcbc" android:gravity="center" android:id="@+id/who" android:layout_width="46dp" android:layout_height="wrap_content" android:lines="3" android:singleLine="true" app:rocket_font="7"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/messageBody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp">
+            <ImageView android:id="@+id/sticker" android:layout_width="@dimen/sticker_width" android:layout_height="@dimen/sticker_height"/>
+            <ru.rocketbank.core.widgets.RocketHeartBeatlLoader android:layout_gravity="right" android:id="@+id/loader" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="39dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@+id/retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="@string/retry_cap"/>
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12sp" android:textColor="#bcbcbc" android:layout_gravity="right" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="12dp"/>
+</LinearLayout>

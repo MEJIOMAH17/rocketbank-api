@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/selected" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00010" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00011" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00012" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00013" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00014" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00015" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00016" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00017" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00018" />
+    <item android:duration="30" android:drawable="@mipmap/lentaload_00019" />
+</animation-list>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_message_out_operation_0" android:paddingLeft="13.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="@dimen/dimen_icon_size" android:layout_height="@dimen/dimen_icon_size" />
+            <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:gravity="center" android:id="@id/who" android:layout_width="46.0dip" android:layout_height="wrap_content" android:lines="3" android:singleLine="true" app:rocket_font="regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/messageBody" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="178.0dip" android:layout_height="wrap_content">
+                <ru.rocketbank.r2d2.widgets.operations.OperationIconView android:id="@id/operationLogo" android:layout_width="@dimen/operation_size" android:layout_height="@dimen/operation_size" android:layout_marginTop="25.0dip" />
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15.0sp" android:textColor="@color/black_universal" android:gravity="center" android:id="@id/operationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" app:rocket_font="regular" />
+                <ru.rocketbank.core.widgets.RocketAutofitTextView android:textSize="18.0sp" android:id="@id/operationTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="22.0dip" app:rocket_font="regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ru.rocketbank.core.widgets.RocketTextView android:textColor="@color/orange" android:layout_gravity="right" android:id="@id/retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/retry_cap" />
+    <ru.rocketbank.core.widgets.RocketTextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:layout_gravity="right" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" />
+</LinearLayout>

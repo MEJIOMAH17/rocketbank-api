@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <include layout="@layout/include_toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <io.codetail.widget.RevealFrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@+id/backgroundView" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </io.codetail.widget.RevealFrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:animateLayoutChanges="true">
+                <ru.rocketbank.core.widgets.RocketLoader android:id="@+id/rocketLoader" android:layout_width="105dp" android:layout_height="105dp"/>
+                <ru.rocketbank.core.widgets.RocketTextView android:textSize="15sp" android:textColor="@color/gray60" android:id="@+id/textViewStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:animateLayoutChanges="true">
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/buttonTop" android:background="@drawable/orange_button_background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/migration_button_height" android:text="@string/retry_cap" app:rocket_font="1"/>
+                <ru.rocketbank.core.widgets.RocketButton android:textSize="@dimen/migration_button_text_size" android:textColor="@color/registration_bottom_button_text_color_selector" android:layout_gravity="bottom" android:id="@+id/buttonBottom" android:background="@color/transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/close_cap" app:rocket_font="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

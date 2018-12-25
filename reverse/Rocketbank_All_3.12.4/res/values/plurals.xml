@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days">
+        <item quantity="other">дня</item>
+        <item quantity="zero">дней</item>
+        <item quantity="one">день</item>
+        <item quantity="two">дня</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+    </plurals>
+    <plurals name="friends">
+        <item quantity="other">друга присоединилось</item>
+        <item quantity="zero">друзей присоединилось</item>
+        <item quantity="one">друг присоединился</item>
+        <item quantity="two">друга присоединилось</item>
+        <item quantity="few">друга присоединилось</item>
+        <item quantity="many">друзей присоединилось</item>
+    </plurals>
+    <plurals name="money_malina">
+        <item quantity="other">баллов МАЛИНА</item>
+        <item quantity="zero">баллов МАЛИНА</item>
+        <item quantity="one">балл МАЛИНА</item>
+        <item quantity="two">балла МАЛИНА</item>
+        <item quantity="few">балла МАЛИНА</item>
+        <item quantity="many">баллов МАЛИНА</item>
+    </plurals>
+    <plurals name="money_malina_first_cap">
+        <item quantity="other">Баллов МАЛИНА</item>
+        <item quantity="zero">Баллов МАЛИНА</item>
+        <item quantity="one">Балл МАЛИНА</item>
+        <item quantity="two">Балла МАЛИНА</item>
+        <item quantity="few">Балла МАЛИНА</item>
+        <item quantity="many">Баллов МАЛИНА</item>
+    </plurals>
+    <plurals name="money_metropolis">
+        <item quantity="other">M-рублей</item>
+        <item quantity="zero">M-рублей</item>
+        <item quantity="one">M-рубль</item>
+        <item quantity="two">M-рубля</item>
+        <item quantity="few">M-рубля</item>
+        <item quantity="many">M-рублей</item>
+    </plurals>
+    <plurals name="money_metropolis_first_cap">
+        <item quantity="other">M-рублей</item>
+        <item quantity="zero">M-рублей</item>
+        <item quantity="one">M-рубль</item>
+        <item quantity="two">M-рубля</item>
+        <item quantity="few">M-рубля</item>
+        <item quantity="many">M-рублей</item>
+    </plurals>
+    <plurals name="money_place">
+        <item quantity="other">мест</item>
+        <item quantity="zero">мест</item>
+        <item quantity="one">место</item>
+        <item quantity="two">места</item>
+        <item quantity="few">места</item>
+        <item quantity="many">мест</item>
+    </plurals>
+    <plurals name="money_rocket">
+        <item quantity="other">рокетрублей</item>
+        <item quantity="zero">рокетрублей</item>
+        <item quantity="one">рокетрубль</item>
+        <item quantity="two">рокетрубля</item>
+        <item quantity="few">рокетрубля</item>
+        <item quantity="many">рокетрублей</item>
+    </plurals>
+    <plurals name="money_rocket_first_cap">
+        <item quantity="other">Рокетрублей</item>
+        <item quantity="zero">Рокетрублей</item>
+        <item quantity="one">Рокетрубль</item>
+        <item quantity="two">Рокетрубля</item>
+        <item quantity="few">Рокетрубля</item>
+        <item quantity="many">Рокетрублей</item>
+    </plurals>
+    <plurals name="money_tripcoins">
+        <item quantity="other">трипкоинов</item>
+        <item quantity="zero">трипкоиноы</item>
+        <item quantity="one">трипкоин</item>
+        <item quantity="two">трипкоина</item>
+        <item quantity="few">трипкоина</item>
+        <item quantity="many">трипкоинов</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">месяца</item>
+        <item quantity="zero">месяцев</item>
+        <item quantity="one">месяц</item>
+        <item quantity="two">месяца</item>
+        <item quantity="few">месяца</item>
+        <item quantity="many">месяцев</item>
+    </plurals>
+    <plurals name="operations">
+        <item quantity="other">%1$s операций</item>
+        <item quantity="zero">%1$d операций</item>
+        <item quantity="one">%1$d операция</item>
+        <item quantity="two">%1$d операции</item>
+        <item quantity="few">%1$d операции</item>
+        <item quantity="many">%1$d операций</item>
+    </plurals>
+    <plurals name="pspa_your_friends">
+        <item quantity="other">ваших друга уже пользуются рокетбанком</item>
+        <item quantity="zero">ваших друзей уже пользуются рокетбанком</item>
+        <item quantity="one">ваш друг уже пользуется рокетбанком</item>
+        <item quantity="two">ваших друга уже пользуются рокетбанком</item>
+        <item quantity="few">ваших друга уже пользуются рокетбанком</item>
+        <item quantity="many">ваших друзей уже пользуются рокетбанком</item>
+    </plurals>
+</resources>
