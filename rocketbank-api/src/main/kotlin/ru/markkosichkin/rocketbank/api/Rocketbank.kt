@@ -30,7 +30,11 @@ class Rocketbank {
 
 
     private val httpclient = HttpClients.createMinimal()
-
+    /**
+     * @param token полученный из login
+     * @param deviceToken token устройства
+     * @param количество записей которое нужно вернуть.
+     */
     fun feed(token: String, deviceToken: String, resultAmount: Int): String {
         val uri = URIBuilder(ROCKET_URL + FEED)
                 .addParameter("token", token)
