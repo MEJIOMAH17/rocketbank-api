@@ -18,6 +18,7 @@ class RocketbankTest {
 //        val loginTocken = rocketbank.verify(registerToken, deviceTocken, code!!)
         println(loginToken)
         val sessionTocken = rocketbank.login(deviceToken, loginToken, "0048")
-        println(rocketbank.feed(sessionTocken,deviceToken,1))
+        println(rocketbank.profile(sessionTocken,deviceToken))
+//        println(rocketbank.feed("f9cd468b28c8cc31e4a0abca82166c9f",sessionTocken,deviceToken,9999))
     }
 }

@@ -25,7 +25,8 @@ class Rocketbank {
         private val REGISTER = "/api/v5/devices/register"
         private val VERIFY = "//api/v5/sms_verifications/%s/verify"
         private val LOGIN = "/api/v5/login"
-        private val FEED = "/api/v5/operations/sexy_feed"
+        private val FEED = "/api/v5/accounts/%s/feed"
+        private val PROFILE = "/api/v5/profile"
     }
 
 
@@ -35,15 +36,28 @@ class Rocketbank {
      * @param deviceToken token устройства
      * @param количество записей которое нужно вернуть.
      */
-    fun feed(token: String, deviceToken: String, resultAmount: Int): String {
-        val uri = URIBuilder(ROCKET_URL + FEED)
-                .addParameter("token", token)
+    fun feed(accountToken:String,authToken: String, deviceToken: String, resultAmount: Int): String {
+        val uri = URIBuilder(String.format(ROCKET_URL + FEED,accountToken))
                 .addParameter("page", "1")
                 .addParameter("per_page", resultAmount.toString())
                 .build()
         val httpGet = HttpGet(uri)
         addDefaultHeader(httpGet, deviceToken)
-        httpGet.addHeader("authorization", "Token token=$token")
+        httpGet.addHeader("authorization", "Token token=$authToken")
+
+        val execute = httpclient.execute(httpGet)
+
+        val reader = InputStreamReader(execute.getEntity().getContent())
+        val result = BufferedReader(reader).lines().collect(Collectors.toList()).toString()
+        return result
+    }
+
+    fun profile(authToken: String,deviceToken: String):String{
+        val uri = URIBuilder(String.format(ROCKET_URL + PROFILE))
+                .build()
+        val httpGet = HttpGet(uri)
+        addDefaultHeader(httpGet, deviceToken)
+        httpGet.addHeader("authorization", "Token token=$authToken")
 
         val execute = httpclient.execute(httpGet)
 
