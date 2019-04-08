@@ -3,22 +3,24 @@ package ru.markkosichkin.rocketbank
 import org.junit.Test
 import ru.markkosichkin.rocketbank.api.Rocketbank
 
-import java.util.UUID
-
 class RocketbankTest {
-    val loginToken="2h2XgPuhQVenzsQxtd_e"
-    val deviceToken="4891a192-c1c7-4a0b-a8a0-e1cc6c244ba8"
+    val loginToken = "2h2XgPuhQVenzsQxtd_e"
+    val deviceTocken = "48f57eea-df21-4c6e-a398-92120e040227"
+    val registerToken = "7e0b7a5d2cf6-d17d33c3c92b-d1a2c7bd0306"
+
+
     @Test
     fun testRocket() {
         val rocketbank = Rocketbank()
 //        val deviceTocken = UUID.randomUUID().toString()
 //        println(deviceTocken)
-//        val registerToken = rocketbank.registerDevice(deviceTocken, "79168713361")
-//        var code = "4444"
-//        val loginTocken = rocketbank.verify(registerToken, deviceTocken, code!!)
+        val registerToken = rocketbank.registerDevice(deviceTocken, "79168713361")
+        println(registerToken)
+        var code = "0221"
+        val loginTocken = rocketbank.verify(registerToken, deviceTocken, code!!)
         println(loginToken)
-        val sessionTocken = rocketbank.login(deviceToken, loginToken, "0048")
-        println(rocketbank.profile(sessionTocken,deviceToken))
-//        println(rocketbank.feed("f9cd468b28c8cc31e4a0abca82166c9f",sessionTocken,deviceToken,9999))
+        val sessionTocken = rocketbank.login(deviceTocken, loginToken, "0048")
+        println(rocketbank.profile(sessionTocken, deviceTocken))
+        println(rocketbank.feed("f9cd468b28c8cc31e4a0abca82166c9f", sessionTocken, deviceTocken, 20))
     }
 }
