@@ -69,6 +69,7 @@ class Rocketbank {
     }
 
 
+
     /**
      * @param token полученный из {@link registerDevice()}
      * @param code код из смс
@@ -76,6 +77,8 @@ class Rocketbank {
     fun verify(token: String, deviceToken: String, code: String): String {
         val connection = URL(String.format(ROCKET_URL + VERIFY, token)).openConnection() as HttpURLConnection
         connection.addDefaultHeader(deviceToken)
+        connection.setRequestProperty("X-HTTP-Method-Override", "PATCH");
+        connection.setRequestMethod("POST");
         connection.setBody("id=$token&code=$code")
 
         val reader = InputStreamReader(connection.inputStream)
@@ -133,4 +136,5 @@ class Rocketbank {
         }
         return result.toString()
     }
+
 }
