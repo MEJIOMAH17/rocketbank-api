@@ -1,17 +1,18 @@
 package ru.markkosichkin.rocketbank.api
 
+import ru.markkosichkin.rocketbank.util.Base64
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 import java.security.MessageDigest
-import java.util.*
 import java.util.regex.Pattern
 import java.util.stream.Collectors
 import kotlin.experimental.and
 import kotlin.experimental.or
 import java.io.OutputStreamWriter
 import java.nio.charset.StandardCharsets
+import java.util.Date
 
 
 class Rocketbank {
