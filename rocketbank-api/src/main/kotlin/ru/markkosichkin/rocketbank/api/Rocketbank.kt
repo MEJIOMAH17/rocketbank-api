@@ -1,5 +1,6 @@
 package ru.markkosichkin.rocketbank.api
 
+import okhttp3.*
 import ru.markkosichkin.rocketbank.util.Base64
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -23,6 +24,7 @@ class Rocketbank {
         private val LOGIN = "/api/v5/login"
         private val FEED = "/api/v5/accounts/%s/feed"
         private val PROFILE = "/api/v5/profile"
+        var client = OkHttpClient()
     }
 
     /**
@@ -31,22 +33,27 @@ class Rocketbank {
      * @param количество записей которое нужно вернуть.
      */
     fun feed(accountToken: String, authToken: String, deviceToken: String, resultAmount: Int): String {
-        val connection = URL(String.format(ROCKET_URL + FEED, accountToken)).openConnection() as HttpURLConnection
-        connection.addRequestProperty("page", "1")
-        connection.addRequestProperty("per_page", resultAmount.toString())
-        connection.addDefaultHeader(deviceToken)
-        connection.addRequestProperty("authorization", "Token token=$authToken")
-        return BufferedReader(InputStreamReader(connection.inputStream)).lines().collect(Collectors.joining())
+        return client.newCall(Request.Builder()
+                .url(
+                        Url(ROCKET_URL + FEED, accountToken)
+                                .addParam("page", "1")
+                                .addParam("per_page", resultAmount.toString())
+                                .url
+                )
+                .addDefaultHeader(deviceToken)
+                .addHeader("authorization", "Token token=$authToken")
+                .build())
+                .execute().body()!!.string()
     }
 
 
     fun profile(authToken: String, deviceToken: String): String {
-        val connection = URL(String.format(ROCKET_URL + PROFILE)).openConnection() as HttpURLConnection
-        connection.addDefaultHeader(deviceToken)
-        connection.addRequestProperty("authorization", "Token token=$authToken")
-        val reader = InputStreamReader(connection.inputStream)
-        val result = BufferedReader(reader).lines().collect(Collectors.toList()).toString()
-        return result
+        return client.newCall(Request.Builder()
+                .url(ROCKET_URL + PROFILE)
+                .addDefaultHeader(deviceToken)
+                .addHeader("authorization", "Token token=$authToken")
+                .build()).execute().body()!!.string()
+
     }
 
 
@@ -56,12 +63,17 @@ class Rocketbank {
      * @param password пароль пользователя от приложения
      */
     fun login(deviceToken: String, loginToken: String, password: String): String {
-        val connection = URL(ROCKET_URL + LOGIN).openConnection() as HttpURLConnection
-        connection.addDefaultHeader(deviceToken)
-        val encoded = Base64.getEncoder().encodeToString(("$loginToken:$password").toByteArray(StandardCharsets.UTF_8))
-        connection.setRequestProperty("Authorization", "Basic " + encoded)
-        val reader = InputStreamReader(connection.inputStream)
-        val result = BufferedReader(reader).lines().collect(Collectors.toList()).toString()
+
+        val encoded = Base64.getEncoder().encodeToString(("$:$").toByteArray(StandardCharsets.UTF_8))
+
+        val result = client
+                .newCall(Request.Builder()
+                        .url(
+                                Url(ROCKET_URL + LOGIN)
+                                        .url)
+                        .addHeader("Authorization", Credentials.basic(loginToken, password))
+                        .addDefaultHeader(deviceToken)
+                        .build()).execute().body()!!.string()
 
         val pattern = Pattern.compile("\"token\": *\"(.*?)\"")
         val matcher = pattern.matcher(result)
@@ -70,20 +82,24 @@ class Rocketbank {
     }
 
 
-
     /**
      * @param token полученный из {@link registerDevice()}
      * @param code код из смс
      */
     fun verify(token: String, deviceToken: String, code: String): String {
-        val connection = URL(String.format(ROCKET_URL + VERIFY, token)).openConnection() as HttpURLConnection
-        connection.addDefaultHeader(deviceToken)
-        connection.setRequestProperty("X-HTTP-Method-Override", "PATCH");
-        connection.setRequestMethod("POST");
-        connection.setBody("id=$token&code=$code")
 
-        val reader = InputStreamReader(connection.inputStream)
-        val result = BufferedReader(reader).lines().collect(Collectors.toList()).toString()
+        val result = client.newCall(Request.Builder()
+                .url(
+                        Url(ROCKET_URL + VERIFY, token)
+                                .url)
+                .patch(FormBody.Builder()
+                        .add("id", token)
+                        .add("code", code)
+                        .build())
+                .addDefaultHeader(deviceToken)
+                .build()
+
+        ).execute().body()!!.string()
 
         val pattern = Pattern.compile("\"login_token\": *\"(.*?)\"")
         val matcher = pattern.matcher(result)
@@ -95,35 +111,36 @@ class Rocketbank {
      * Телефон в формате 79161234567
      */
     fun registerDevice(deviceToken: String, phone: String): String {
-        val connection = URL(ROCKET_URL + REGISTER).openConnection() as HttpURLConnection
-        connection.addDefaultHeader(deviceToken)
-        connection.setBody("phone=%2B$phone")
-        val reader = InputStreamReader(connection.inputStream)
-        val result = BufferedReader(reader).lines().collect(Collectors.toList()).toString()
+        val result = client.newCall(Request.Builder()
+                .url(
+                        Url(ROCKET_URL + REGISTER)
+                                .url)
+                .addHeader("content-type", "application/x-www-form-urlencoded")
+                .addDefaultHeader(deviceToken)
+                .post(FormBody.Builder()
+                        .add("phone", phone)
+                        .build())
+                .build()).execute().body()!!.string()
         val pattern = Pattern.compile("\"id\":\"(.*?)\"")
         val matcher = pattern.matcher(result)
         matcher.find()
         return matcher.group(1)
     }
 
+    private fun mediaType() = MediaType.get("application/x-www-form-urlencoded")
+
     private fun getDeviceId(deviceToken: String): String {
         return "ANDROID$deviceToken"
     }
 
-    private fun HttpURLConnection.addDefaultHeader(deviceToken: String) {
+    private fun Request.Builder.addDefaultHeader(deviceToken: String): Request.Builder {
         val time = Date().time / 1000
-        addRequestProperty("x-time", time.toString())
-        addRequestProperty("x-sig", generateXsig(time))
-        addRequestProperty("x-device-id", getDeviceId(deviceToken))
+        addHeader("x-time", time.toString())
+        addHeader("x-sig", generateXsig(time))
+        addHeader("x-device-id", getDeviceId(deviceToken))
+        return this
     }
 
-    private fun HttpURLConnection.setBody(data: String) {
-        addRequestProperty("content-type", "application/x-www-form-urlencoded")
-        doOutput = true
-        val outputStreamWriter = OutputStreamWriter(outputStream)
-        outputStreamWriter.write(data)
-        outputStreamWriter.close()
-    }
 
     private fun generateXsig(time: Long): String {
         val md5 = MessageDigest.getInstance("MD5")
