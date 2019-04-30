@@ -75,4 +75,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>mekosichkin.ru-releases</name>
+            <url>https://mekosichkin.ru/artifactory/libs-release</url>
+        </repository>
+    </distributionManagement>
 </project>

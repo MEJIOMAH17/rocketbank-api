@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":jadx-core" external.linked.project.path="$MODULE_DIR$/../../../reverse/jadx/jadx-core" external.root.project.path="$MODULE_DIR$/../../../reverse/jadx" external.system.id="GRADLE" external.system.module.group="jadx" external.system.module.version="dev" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../reverse/jadx/jadx-core">
+      <excludeFolder url="file://$MODULE_DIR$/../../../reverse/jadx/jadx-core/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../reverse/jadx/jadx-core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../reverse/jadx/jadx-core/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="jadx:main" external.linked.project.path="$MODULE_DIR$/../../reverse/jadx" external.root.project.path="$MODULE_DIR$/../../reverse/jadx" external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="dev" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../reverse/jadx/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../reverse/jadx/src/main" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.26" level="project" />
+  </component>
+</module>
